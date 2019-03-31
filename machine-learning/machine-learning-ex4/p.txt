@@ -1,0 +1,27 @@
+%for i= 1:m
+sizeA2 = size(a2,:)); % 1   10
+sizeY = size(Y(i,:));% 1    10
+a3L = a2(i,:);
+yL = Y(i,:);
+delta3L = (a3L - yL);
+
+sizeTheta2= size(Theta2);%  10   26
+sizeDelta3= size(delta3L);% 1    10
+
+%d2 = (transpose(Theta2)*transpose(d3))*sigmoidGradient(z2)
+size261 = size(transpose(Theta2).*delta3L)
+delta2L =  (transpose(Theta2).*delta3L).*sigmoidGradient(z2(i,1:end));
+
+sizesDelta2L = size(delta2L); % 26   10
+delta2L = delta2L(2:end,1:end); 
+sizesDelta2L = size(delta2L) % 25   10
+sizeDelta3= size(delta3L);% 1    10
+a1 = a1(1:end,2:end);
+sizeA1 = size(a1)% 5000     26 
+%add  = delta2L*transpose(a3L);
+add = delta3L*a2
+sizeAdd = size(add)
+
+APEN = [APEN,add];
+sizeAL2= size(APEN);
+%endfor

@@ -1,0 +1,40 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mBinaryTreeSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- proper inserts and lookups *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.AssertionError: assertion failed: timeout (3 seconds) during expectMsg while waiting for ContainsResult(1,false)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.assert(Predef.scala:170)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsg_internal(TestKit.scala:402)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsg(TestKit.scala:379)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKit.expectMsg(TestKit.scala:896)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at actorbintree.BinaryTreeSuite$$anonfun$1.apply$mcV$sp(BinaryTreeSuite.scala:56)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at actorbintree.BinaryTreeSuite$$anonfun$1.apply(BinaryTreeSuite.scala:52)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at actorbintree.BinaryTreeSuite$$anonfun$1.apply(BinaryTreeSuite.scala:52)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- instruction example *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.IllegalStateException: cannot create children while terminating or terminated[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.actor.dungeon.Children$class.makeChild(Children.scala:273)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.actor.dungeon.Children$class.attachChild(Children.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.actor.ActorCell.attachChild(ActorCell.scala:429)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.actor.ActorSystemImpl.systemActorOf(ActorSystem.scala:750)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.$init$(TestKit.scala:167)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKit.<init>(TestKit.scala:896)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestProbe.<init>(TestKit.scala:954)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestProbe.<init>(TestKit.scala:956)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestProbe$.apply(TestKit.scala:990)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at actorbintree.BinaryTreeSuite$$anonfun$2.apply$mcV$sp(BinaryTreeSuite.scala:67)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- behave identically to built-in set (includes GC) *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.IllegalStateException: cannot create children while terminating or terminated[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.actor.dungeon.Children$class.makeChild(Children.scala:273)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.actor.dungeon.Children$class.attachChild(Children.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.actor.ActorCell.attachChild(ActorCell.scala:429)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.actor.ActorSystemImpl.systemActorOf(ActorSystem.scala:750)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.$init$(TestKit.scala:167)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKit.<init>(TestKit.scala:896)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestProbe.<init>(TestKit.scala:954)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestProbe.<init>(TestKit.scala:956)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestProbe$.apply(TestKit.scala:990)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at actorbintree.BinaryTreeSuite$$anonfun$3.apply$mcV$sp(BinaryTreeSuite.scala:120)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m

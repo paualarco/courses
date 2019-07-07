@@ -2,66 +2,72 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6e18748-3b6a-48bf-a5e7-bfb17e295d62" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../../.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../.idea/hydra.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/hydra.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__ch_qos_logback_logback_classic_1_1_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__ch_qos_logback_logback_core_1_1_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__com_ning_async_http_client_1_9_40_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__com_typesafe_akka_akka_actor_2_11_2_5_16_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__com_typesafe_akka_akka_cluster_2_11_2_5_16_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__com_typesafe_akka_akka_protobuf_2_11_2_5_16_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__com_typesafe_akka_akka_remote_2_11_2_5_16_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__com_typesafe_akka_akka_stream_2_11_2_5_16_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__com_typesafe_akka_akka_testkit_2_11_2_5_16_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__com_typesafe_config_1_3_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__com_typesafe_ssl_config_core_2_11_0_2_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__io_aeron_aeron_client_1_9_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__io_aeron_aeron_driver_1_9_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__io_netty_netty_3_10_6_Final_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__org_agrona_agrona_0_9_18_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__org_jsoup_jsoup_1_8_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__org_reactivestreams_reactive_streams_1_0_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__org_scala_lang_modules_scala_java8_compat_2_11_0_7_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__org_scala_lang_modules_scala_parser_combinators_2_11_1_1_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_11_1_0_6_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__org_scala_lang_scala_library_2_11_12_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_11_12_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__org_scalactic_scalactic_2_11_3_0_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__org_scalatest_scalatest_2_11_3_0_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/libraries/sbt__org_slf4j_slf4j_api_1_7_16_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/modules/linkchecker.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/modules/reactive-link-checker-build.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/sbt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/scala_compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/libraries/sbt__com_typesafe_akka_akka_actor_2_11_2_5_21_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/libraries/sbt__com_typesafe_akka_akka_actor_testkit_typed_2_11_2_5_21_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/libraries/sbt__com_typesafe_akka_akka_actor_typed_2_11_2_5_21_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/libraries/sbt__com_typesafe_akka_akka_protobuf_2_11_2_5_21_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/libraries/sbt__com_typesafe_akka_akka_stream_2_11_2_5_21_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/libraries/sbt__com_typesafe_akka_akka_stream_testkit_2_11_2_5_21_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/libraries/sbt__com_typesafe_akka_akka_stream_typed_2_11_2_5_21_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/libraries/sbt__com_typesafe_akka_akka_testkit_2_11_2_5_21_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/libraries/sbt__com_typesafe_config_1_3_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/libraries/sbt__com_typesafe_ssl_config_core_2_11_0_3_7_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/libraries/sbt__junit_junit_4_10_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/libraries/sbt__org_hamcrest_hamcrest_core_1_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/libraries/sbt__org_reactivestreams_reactive_streams_1_0_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/libraries/sbt__org_scala_lang_modules_scala_java8_compat_2_11_0_7_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/libraries/sbt__org_scala_lang_modules_scala_parser_combinators_2_11_1_1_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_11_1_0_6_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/libraries/sbt__org_scala_lang_scala_library_2_11_12_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_11_12_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/libraries/sbt__org_scala_sbt_test_interface_1_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/libraries/sbt__org_scalacheck_scalacheck_2_11_1_13_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/libraries/sbt__org_scalactic_scalactic_2_11_3_0_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/libraries/sbt__org_scalatest_scalatest_2_11_3_0_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/modules/async-build.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/modules/reactive-async.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/hydra.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/libraries/sbt__com_typesafe_akka_akka_actor_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/libraries/sbt__com_typesafe_akka_akka_actor_testkit_typed_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/libraries/sbt__com_typesafe_akka_akka_actor_typed_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/libraries/sbt__com_typesafe_akka_akka_protobuf_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/libraries/sbt__com_typesafe_akka_akka_stream_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/libraries/sbt__com_typesafe_akka_akka_stream_testkit_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/libraries/sbt__com_typesafe_akka_akka_stream_typed_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/libraries/sbt__com_typesafe_akka_akka_testkit_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/libraries/sbt__com_typesafe_config_1_3_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/libraries/sbt__com_typesafe_ssl_config_core_2_11_0_3_7_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/libraries/sbt__junit_junit_4_10_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/libraries/sbt__org_hamcrest_hamcrest_core_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/libraries/sbt__org_reactivestreams_reactive_streams_1_0_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/libraries/sbt__org_scala_lang_modules_scala_java8_compat_2_11_0_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/libraries/sbt__org_scala_lang_modules_scala_parser_combinators_2_11_1_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_11_1_0_6_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/libraries/sbt__org_scala_lang_scala_library_2_11_12_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_11_12_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/libraries/sbt__org_scala_sbt_test_interface_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/libraries/sbt__org_scalacheck_scalacheck_2_11_1_13_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/libraries/sbt__org_scalactic_scalactic_2_11_3_0_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/libraries/sbt__org_scalatest_scalatest_2_11_3_0_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/modules/kvstore-build.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/modules/reactive-kvstore.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/sbt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Handling Failure and State/kvstore/src/main/scala/kvstore/map.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/actorbintree/BinaryTreeSet.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/actorbintree/BinaryTreeSet.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/actorbintree/BinaryTreeSuite.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/actorbintree/BinaryTreeSuite.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/actorbintree/map.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/actorbintree/map.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeNode$$anonfun$copying$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeNode$$anonfun$copying$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeNode$$anonfun$receive$1$$anonfun$applyOrElse$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeNode$$anonfun$receive$1$$anonfun$applyOrElse$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeNode$$anonfun$receive$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeNode$$anonfun$receive$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeNode$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeNode$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeNode$CopyFinished$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeNode$CopyFinished$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeNode$CopyTo$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeNode$CopyTo$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeNode$CopyTo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeNode$CopyTo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeNode$Left$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeNode$Left$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeNode$Right$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeNode$Right$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$$anonfun$dequeueing$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$$anonfun$dequeueing$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$$anonfun$garbageCollecting$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$$anonfun$garbageCollecting$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Contains$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Contains$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Contains.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Contains.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$ContainsResult$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$ContainsResult$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$ContainsResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$ContainsResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$GC$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$GC$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Insert$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Insert$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Insert.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Insert.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$OperationFinished$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$OperationFinished$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$OperationFinished.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$OperationFinished.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Remove$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Remove$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Remove.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Remove.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/actorbintree/BinaryTreeSet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/actorbintree/map.sc" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/actorbintree/map.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reactive-link-checker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../reactive-link-checker/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reactive-week2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../reactive-week2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Introducction/async/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Introducction/async/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -93,27 +99,29 @@
     <session id="-1346256616">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Properties" value="1" />
-          <entry key="Scala" value="7" />
+          <entry key="Scala" value="8" />
           <entry key="sbt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Scala" value="13899" />
+          <entry key="Scala" value="14820" />
           <entry key="sbtShell" value="8" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/MOOCPlugin.scala">
           <provider selected="true" editor-type-id="text-editor">
@@ -126,14 +134,21 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/actorbintree/BinaryTreeSet.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="140" column="30" selection-start-line="140" selection-start-column="21" selection-end-line="140" selection-end-column="30" />
+            <state relative-caret-position="119">
+              <caret line="58" column="53" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="53" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#99#118#0" expanded="true" />
-                <element signature="e#1612#1634#0" expanded="true" />
-                <element signature="e#5579#5602#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.5.21/akka-actor_2.11-2.5.21-sources.jar!/akka/dispatch/Dispatcher.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2142">
+              <caret line="135" column="7" selection-start-line="135" selection-start-column="7" selection-end-line="135" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -141,7 +156,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.11/3.0.5/scalatest_2.11-3.0.5-sources.jar!/org/scalatest/tools/Runner.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
+            <state relative-caret-position="22134">
               <caret line="1339" selection-start-line="1339" selection-end-line="1339" />
             </state>
           </provider>
@@ -150,8 +165,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/collection/immutable/List.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="403" column="10" lean-forward="true" selection-start-line="403" selection-start-column="10" selection-end-line="403" selection-end-column="10" />
+            <state relative-caret-position="6698">
+              <caret line="403" column="10" selection-start-line="403" selection-start-column="10" selection-end-line="403" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -178,8 +193,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/actorbintree/BinaryTreeSuite.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-782">
-              <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+            <state relative-caret-position="2193">
+              <caret line="142" column="31" selection-start-line="142" selection-start-column="31" selection-end-line="142" selection-end-column="31" />
               <folding>
                 <element signature="e#97#144#0" expanded="true" />
               </folding>
@@ -190,8 +205,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/actorbintree/map.sc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+            <state relative-caret-position="136">
+              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -230,8 +245,13 @@
       <find>Migrat</find>
       <find>8</find>
       <find>Received element</find>
-      <find>requester</find>
       <find>Migr</find>
+      <find>Garbage</find>
+      <find>newRoot</find>
+      <find>696</find>
+      <find>CopyFinished</find>
+      <find>Received</find>
+      <find>requester</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -247,8 +267,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/scala/actorbintree/BinaryTreeSuite.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/actorbintree/map.sc" />
+        <option value="$PROJECT_DIR$/src/test/scala/actorbintree/BinaryTreeSuite.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/actorbintree/BinaryTreeSet.scala" />
       </list>
     </option>
@@ -260,10 +280,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-6" />
-    <option name="y" value="-6" />
-    <option name="width" value="1549" />
-    <option name="height" value="877" />
+    <option name="width" value="140" />
+    <option name="height" value="39" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -272,7 +290,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -340,11 +357,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562417529403" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../reactive-week2" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562450872226" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -445,34 +463,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BinaryTreeSuite - 2019.07.06 at 13h 31m 21s.xml">
+    <history-entry file="BinaryTreeSuite - 2019.07.06 at 21h 41m 34s.xml">
       <configuration name="BinaryTreeSuite" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="BinaryTreeSuite - 2019.07.06 at 13h 32m 17s.xml">
+    <history-entry file="BinaryTreeSuite - 2019.07.06 at 21h 41m 55s.xml">
       <configuration name="BinaryTreeSuite" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="BinaryTreeSuite - 2019.07.06 at 15h 21m 20s.xml">
+    <history-entry file="BinaryTreeSuite - 2019.07.06 at 21h 47m 42s.xml">
       <configuration name="BinaryTreeSuite" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="BinaryTreeSuite - 2019.07.06 at 15h 23m 45s.xml">
+    <history-entry file="BinaryTreeSuite - 2019.07.06 at 21h 52m 43s.xml">
       <configuration name="BinaryTreeSuite" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="BinaryTreeSuite - 2019.07.06 at 15h 25m 24s.xml">
+    <history-entry file="BinaryTreeSuite - 2019.07.06 at 21h 56m 22s.xml">
       <configuration name="BinaryTreeSuite" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="BinaryTreeSuite - 2019.07.06 at 15h 26m 47s.xml">
+    <history-entry file="BinaryTreeSuite - 2019.07.06 at 21h 56m 45s.xml">
       <configuration name="BinaryTreeSuite" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="BinaryTreeSuite - 2019.07.06 at 15h 29m 08s.xml">
+    <history-entry file="BinaryTreeSuite - 2019.07.06 at 21h 57m 15s.xml">
       <configuration name="BinaryTreeSuite" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="BinaryTreeSuite - 2019.07.06 at 15h 31m 45s.xml">
+    <history-entry file="BinaryTreeSuite - 2019.07.06 at 22h 00m 28s.xml">
       <configuration name="BinaryTreeSuite" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="BinaryTreeSuite - 2019.07.06 at 15h 36m 49s.xml">
+    <history-entry file="BinaryTreeSuite - 2019.07.06 at 22h 07m 56s.xml">
       <configuration name="BinaryTreeSuite" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="BinaryTreeSuite - 2019.07.06 at 15h 52m 24s.xml">
+    <history-entry file="BinaryTreeSuite - 2019.07.06 at 22h 09m 07s.xml">
       <configuration name="BinaryTreeSuite" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
@@ -480,36 +498,36 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Capture Tool" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17643923" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17803837" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Build" weight="0.23226704" />
-      <window_info anchor="bottom" id="sbt-shell-toolwindow" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" weight="0.3033586" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3347779" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5547129" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="sbt" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Maven Projects" weight="0.32995737" />
-      <window_info anchor="right" id="Gradle" visible="true" weight="0.32995737" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.23226704" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3033586" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="sbt" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.32995737" />
+      <window_info anchor="right" id="Gradle" order="7" visible="true" weight="0.32995737" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -530,19 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.sbt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="21" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/plugins.sbt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/build.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/MOOCPlugin.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -550,46 +555,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/actorbintree/map.sc">
+    <entry file="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.5.21/akka-actor_2.11-2.5.21-sources.jar!/akka/dispatch/Dispatcher.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        <state relative-caret-position="2142">
+          <caret line="135" column="7" selection-start-line="135" selection-start-column="7" selection-end-line="135" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.11/3.0.5/scalatest_2.11-3.0.5-sources.jar!/org/scalatest/tools/Runner.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
+        <state relative-caret-position="22134">
           <caret line="1339" selection-start-line="1339" selection-end-line="1339" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/collection/immutable/List.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="403" column="10" lean-forward="true" selection-start-line="403" selection-start-column="10" selection-end-line="403" selection-end-column="10" />
+        <state relative-caret-position="6698">
+          <caret line="403" column="10" selection-start-line="403" selection-start-column="10" selection-end-line="403" selection-end-column="10" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/project/plugins.sbt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="21" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/build.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/actorbintree/BinaryTreeSuite.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-782">
-          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+        <state relative-caret-position="2193">
+          <caret line="142" column="31" selection-start-line="142" selection-start-column="31" selection-end-line="142" selection-end-column="31" />
           <folding>
             <element signature="e#97#144#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/actorbintree/map.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/actorbintree/BinaryTreeSet.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="140" column="30" selection-start-line="140" selection-start-column="21" selection-end-line="140" selection-end-column="30" />
+        <state relative-caret-position="119">
+          <caret line="58" column="53" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="53" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#99#118#0" expanded="true" />
-            <element signature="e#1612#1634#0" expanded="true" />
-            <element signature="e#5579#5602#0" expanded="true" />
           </folding>
         </state>
       </provider>

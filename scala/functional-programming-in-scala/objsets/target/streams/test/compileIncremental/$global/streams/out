@@ -1,0 +1,62 @@
+[0m[[0mdebug[0m] [0m[naha] The objsets.Tweet source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	descendingByRetweet.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) objsets.Tweet: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) objsets.Tweet.[0m
+[0m[[0mdebug[0m] [0m[naha] The following modified names cause invalidation of C:\Users\pauisusanna\IdeaProjects\my-notes\scala\functional-programming-in-scala\objsets\src\test\scala\objsets\TweetSetSuite.scala: Set(descendingByRetweet)[0m
+[0m[[0mdebug[0m] [0m[naha] The objsets.TweetSet source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	descendingByRetweet.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) objsets.TweetSet: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) objsets.TweetSet.[0m
+[0m[[0mdebug[0m] [0m[naha] The following modified names cause invalidation of C:\Users\pauisusanna\IdeaProjects\my-notes\scala\functional-programming-in-scala\objsets\src\test\scala\objsets\TweetSetSuite.scala: Set(descendingByRetweet)[0m
+[0m[[0mdebug[0m] [0m[naha] The objsets.TweetList source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	descendingByRetweet.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) objsets.TweetList: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) objsets.TweetList.[0m
+[0m[[0mdebug[0m] [0m[naha] The following modified names cause invalidation of C:\Users\pauisusanna\IdeaProjects\my-notes\scala\functional-programming-in-scala\objsets\src\test\scala\objsets\TweetSetSuite.scala: Set(descendingByRetweet)[0m
+[0m[[0mdebug[0m] [0m[naha] The objsets.Empty source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	descendingByRetweet.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) objsets.Empty: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
+[0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) objsets.Empty.[0m
+[0m[[0mdebug[0m] [0m[naha] The following modified names cause invalidation of C:\Users\pauisusanna\IdeaProjects\my-notes\scala\functional-programming-in-scala\objsets\src\test\scala\objsets\TweetSetSuite.scala: Set(descendingByRetweet)[0m
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
+[0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	added: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set(NamesChange(objsets.Tweet,ModifiedNames(regularNames = descendingByRetweet, implicitNames = )), NamesChange(objsets.TweetSet,ModifiedNames(regularNames = descendingByRetweet, implicitNames = )), NamesChange(objsets.TweetList,ModifiedNames(regularNames = descendingByRetweet, implicitNames = )), NamesChange(objsets.Empty,ModifiedNames(regularNames = descendingByRetweet, implicitNames = )))[0m
+[0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m[naha] 	product: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	external source: Set(C:\Users\pauisusanna\IdeaProjects\my-notes\scala\functional-programming-in-scala\objsets\src\test\scala\objsets\TweetSetSuite.scala)[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(C:\Users\pauisusanna\IdeaProjects\my-notes\scala\functional-programming-in-scala\objsets\src\test\scala\objsets\TweetSetSuite.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(C:\Users\pauisusanna\IdeaProjects\my-notes\scala\functional-programming-in-scala\objsets\src\test\scala\objsets\TweetSetSuite.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Recompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to C:\Users\pauisusanna\IdeaProjects\my-notes\scala\functional-programming-in-scala\objsets\target\scala-2.11\test-classes...[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.17:component from component compiler for Scala 2.11.12[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.17:component from component compiler for Scala 2.11.12[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 7d9c9b5e, interfacing (CompilerInterface) with Scala compiler version 2.11.12[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-deprecation[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	C:\Program Files\Java\jdk1.8.0_161\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_161\jre\classes;C:\Users\pauisusanna\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.11.12\scala-library-2.11.12.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	C:\Users\pauisusanna\IdeaProjects\my-notes\scala\functional-programming-in-scala\objsets\target\scala-2.11\test-classes;C:\Users\pauisusanna\IdeaProjects\my-notes\scala\functional-programming-in-scala\objsets\target\scala-2.11\classes;C:\Users\pauisusanna\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.11.12\scala-reflect-2.11.12.jar;C:\Users\pauisusanna\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\pauisusanna\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-parser-combinators_2.11\1.0.4\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\pauisusanna\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-xml_2.11\1.0.2\scala-xml_2.11-1.0.2.jar;C:\Users\pauisusanna\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scalatest\scalatest_2.11\2.2.4\scalatest_2.11-2.2.4.jar;C:\Users\pauisusanna\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\junit\junit\4.10\junit-4.10.jar[0m
+[0m[[0mdebug[0m] [0mScala compilation took 3.652418405 s[0m
+[0m[[0mdebug[0m] [0m[naha] New invalidations:[0m
+[0m[[0mdebug[0m] [0m[naha] 	Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Previously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m[naha] 	Set()[0m
+[0m[[0mdebug[0m] [0m[naha] All newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m

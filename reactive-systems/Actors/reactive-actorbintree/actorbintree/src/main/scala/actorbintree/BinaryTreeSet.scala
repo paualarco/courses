@@ -4,7 +4,8 @@
 package actorbintree
 
 import akka.actor._
-import akka.stream.Supervision.Stop
+import akka.dispatch.{PriorityGenerator, UnboundedPriorityMailbox}
+import com.typesafe.config.Config
 
 import scala.collection.immutable.Queue
 
@@ -21,6 +22,8 @@ object BinaryTreeSet {
   trait OperationReply {
     def id: Int
   }
+
+
 
   /** Request with identifier `id` to insert an element `elem` into the tree.
     * The actor at reference `requester` should be notified when this operation
@@ -53,8 +56,7 @@ object BinaryTreeSet {
 
 }
 
-
-class BinaryTreeSet extends Actor with ActorLogging {
+  class BinaryTreeSet extends Actor with ActorLogging {
 
   import BinaryTreeSet._
   import BinaryTreeNode._
@@ -65,7 +67,7 @@ class BinaryTreeSet extends Actor with ActorLogging {
 
   // optional
   var pendingQueue = Queue.empty[Operation]
-
+  var jobsLookUp = Map.empty[Int, ActorRef]
 
   // optional
   def receive = normal
@@ -73,30 +75,19 @@ class BinaryTreeSet extends Actor with ActorLogging {
   // optional
   /** Accepts `Operation` and `GC` messages. */
   val normal: Receive = {
-    case Insert(requester, id, elem) => {
-      log.info(s"Normal - Received Insert id:$id, elem:$elem")
-      root ! Insert(requester, id, elem)
-      //context.become(runNext())
+    case op: Operation => {
+      log.info(s"Normal - Operation received with id:${op.id}, elem:${op.elem}")
+      root ! op
+    }
 
-    }
-    case Contains(requester, id, elem) => {
-      log.info(s"Normal - Received Contains id:$id, elem:$elem")
-      root ! Contains(requester, id, elem)
-      //context.become(runNext())
-    }
-    case Remove(requester, id, elemToRemove) => {
-      log.info(s"Normal - Received Remove id:$id, elemToRemove:$elemToRemove")
-      root ! Remove(requester, id, elemToRemove)
-      //context.become(runNext())
-    }
     case GC => {
       log.info("Normal - GC!")
       val newRoot = context.actorOf(props(0, true))
       root ! CopyTo(newRoot)
       context.become(garbageCollecting(sender(), newRoot))
     }
-
   }
+
 
   // optional
   /** Handles messages while garbage collection is performed.
@@ -106,7 +97,6 @@ class BinaryTreeSet extends Actor with ActorLogging {
   def garbageCollecting(requester: ActorRef, newRoot: ActorRef): Receive = {
     case CopyFinished => {
       log.info("GarbageCollecting - ¡CopyFinished! So starting Migration...")
-      //context stop root
       root = newRoot
       requester ! CopyFinished
       if(pendingQueue.isEmpty){
@@ -115,14 +105,16 @@ class BinaryTreeSet extends Actor with ActorLogging {
       }
       else {
         log.info("GarbageCollecting1 - Not empty queue, so dequeueing...")
-        val nextOp = pendingQueue.head
+        val (nextOp, nextQueue) = pendingQueue.dequeue
         log.debug(s"Gargage Collector to Dequeueing -> Head: ${nextOp}")
         root ! changeToSelfRequester(nextOp)
-        context.become(dequeueing(nextOp))
+        pendingQueue = nextQueue
+        context.become(dequeueing())
       }
     }
     case op: Operation => {
       log.info(s"Garbage collecting - Operation while Garbage Collecting, queue size ${pendingQueue.size}")
+      jobsLookUp = jobsLookUp + (op.id -> op.requester)
       pendingQueue = pendingQueue.enqueue(op)
     }
     case GC => {
@@ -138,26 +130,34 @@ class BinaryTreeSet extends Actor with ActorLogging {
     }
   }
 
-  def dequeueing(op: Operation): Receive = {
+  def dequeueing(): Receive = {
 
     case containsResult: OperationReply => {
-      log.info(s"Dequeueing - OperationReply while returned back to the requester")
-      op.requester ! containsResult
+      log.info(s"Dequeueing - OperationReply returned back to the requester, pendingQueueSize${pendingQueue.size}")
+      val requester = jobsLookUp(containsResult.id)
+      log.info(s"Lookup table match ${containsResult.id}: ${jobsLookUp.mkString(", ")}")
+      requester ! containsResult
+      jobsLookUp = jobsLookUp - containsResult.id
       if (!pendingQueue.isEmpty) {
-        log.info(s"Dequeueing - Sending new request to root")
         val (nextOp, nextQueue) = pendingQueue.dequeue
         pendingQueue = nextQueue
+        log.info(s"Dequeueing - Sending new request to root")
         root ! changeToSelfRequester(nextOp)
-        dequeueing(nextOp)
+        dequeueing()
       } else context.become(normal)
     }
 
     case op: Operation => {
       log.info(s"Dequeueing - Operation while Dequeueing")
       if(!pendingQueue.isEmpty) {
+        jobsLookUp = jobsLookUp + (op.id -> op.requester)
         pendingQueue = pendingQueue.enqueue(op)
-
-      } else { root ! op
+        val (nextOp, nextQueue) = pendingQueue.dequeue
+        pendingQueue = nextQueue
+        root ! changeToSelfRequester(nextOp)
+        dequeueing()
+      } else {
+        root ! op
         context.become(normal)
       }
     }
@@ -201,7 +201,7 @@ class BinaryTreeNode(val elem: Int, initiallyRemoved: Boolean) extends Actor wit
   /** Handles `Operation` messages and `CopyTo` requests. */
   def receive: Receive = {
     case Insert(requester, id, elemToInsert) => {
-      log.info(s"Received Insert with id: $id, elementToInsert: $elemToInsert")
+      log.info(s"Node $elem elemReceive - Insert(id: $id, elementToInsert: $elemToInsert)")
       def insert(position: Position): Unit = {
         subtrees = subtrees + (position -> (context.actorOf(props(elemToInsert, false))))
         requester ! OperationFinished(id)
@@ -228,7 +228,7 @@ class BinaryTreeNode(val elem: Int, initiallyRemoved: Boolean) extends Actor wit
     }
 
     case Contains(requester, id, elemToLookFor) => {
-      //log.info(s"Starts Contains(id: $id, elemToLookFor: $elemToLookFor), on node with elem: $elem")
+      log.info(s"Node $elem Receive - Contains(id: $id, elemToLookFor: $elemToLookFor), on node with elem: $elem")
       if (elemToLookFor == elem && !removed) requester ! ContainsResult(id, true)
       else {
         if (subtrees.isEmpty) requester ! ContainsResult(id, false)
@@ -242,7 +242,7 @@ class BinaryTreeNode(val elem: Int, initiallyRemoved: Boolean) extends Actor wit
     }
 
     case Remove(requester, id, elemToRemove) => {
-      //log.info(s"Received Remove id:$id, elemToRemove:$elemToRemove, on Node with element: $elem")
+      log.info(s"Node $elem Receive - Remove (id:$id, elemToRemove:$elemToRemove)")
       if (elemToRemove == elem) {
         //log.info(s"Removed element: $elem ${if (removed) ", which was already removed" else ""}")
         requester ! OperationFinished(id)
@@ -262,7 +262,7 @@ class BinaryTreeNode(val elem: Int, initiallyRemoved: Boolean) extends Actor wit
     }
 
     case CopyTo(newNode) => {
-      log.info(s"CopyTo received at node with elem: $elem")
+      log.info(s"Node $elem Receive -CopyTo($newNode)")
       var expected = subtrees.values.toSet
       if (!removed) {
       newNode ! Insert(self, elem, elem)
@@ -278,9 +278,10 @@ class BinaryTreeNode(val elem: Int, initiallyRemoved: Boolean) extends Actor wit
     * `insertConfirmed` tracks whether the copy of this node to the new tree has been confirmed.
     */
   def copying(expected: Set[ActorRef], newNode: ActorRef): Receive = {
+
     case CopyFinished => {
+      log.info(s"Node $elem Copying - CopyFinished at node with expected: ${expected.size} nodesCopied: ${nodesCopied.size}")
       nodesCopied += sender()
-      log.info(s"CopyFinished received at node with elem: $elem with expected: ${expected.size} nodesCopied: ${nodesCopied.size}")
       if (expected == nodesCopied) context.parent ! CopyFinished
       }
   /*Actors with elements 4 and 6 finish, and sends CopyFinished to the parent, 5,
@@ -295,14 +296,5 @@ class BinaryTreeNode(val elem: Int, initiallyRemoved: Boolean) extends Actor wit
       if (expected == nodesCopied) context.parent ! CopyFinished
     }
 
-   /* case Terminated(_) => {
-      log.info(s"Re runing CopyTo, since last terminated elem: $elem")
-      var expected = subtrees.values.toSet
-      if (!removed) {
-        newNode ! Insert(self, elem, elem)
-        expected = expected.+(self)
-      }
-      subtrees.values.foreach( _ ! CopyTo(newNode))
-    }*/
   }
 }

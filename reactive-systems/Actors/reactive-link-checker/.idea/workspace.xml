@@ -2,66 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79a7fa77-1148-4f95-ab13-97afb1b8135b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../.idea/hydra.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/hydra.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__ch_qos_logback_logback_classic_1_1_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__ch_qos_logback_logback_core_1_1_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_ning_async_http_client_1_9_40_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_akka_akka_actor_2_11_2_5_16_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_akka_akka_cluster_2_11_2_5_16_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_akka_akka_protobuf_2_11_2_5_16_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_akka_akka_remote_2_11_2_5_16_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_akka_akka_stream_2_11_2_5_16_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_akka_akka_testkit_2_11_2_5_16_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_config_1_3_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_ssl_config_core_2_11_0_2_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_aeron_aeron_client_1_9_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_aeron_aeron_driver_1_9_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_3_10_6_Final_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_agrona_agrona_0_9_18_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_jsoup_jsoup_1_8_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_reactivestreams_reactive_streams_1_0_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_java8_compat_2_11_0_7_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_parser_combinators_2_11_1_1_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_11_1_0_6_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_11_12_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_11_12_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalactic_scalactic_2_11_3_0_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalatest_scalatest_2_11_3_0_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_slf4j_slf4j_api_1_7_16_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/linkchecker.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/reactive-link-checker-build.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/libraries/sbt__com_typesafe_akka_akka_actor_2_11_2_5_21_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/libraries/sbt__com_typesafe_akka_akka_actor_testkit_typed_2_11_2_5_21_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/libraries/sbt__com_typesafe_akka_akka_actor_typed_2_11_2_5_21_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/libraries/sbt__com_typesafe_akka_akka_protobuf_2_11_2_5_21_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/libraries/sbt__com_typesafe_akka_akka_stream_2_11_2_5_21_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/libraries/sbt__com_typesafe_akka_akka_stream_testkit_2_11_2_5_21_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/libraries/sbt__com_typesafe_akka_akka_stream_typed_2_11_2_5_21_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/libraries/sbt__com_typesafe_akka_akka_testkit_2_11_2_5_21_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/libraries/sbt__com_typesafe_config_1_3_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/libraries/sbt__com_typesafe_ssl_config_core_2_11_0_3_7_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/libraries/sbt__junit_junit_4_10_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/libraries/sbt__org_hamcrest_hamcrest_core_1_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/libraries/sbt__org_reactivestreams_reactive_streams_1_0_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/libraries/sbt__org_scala_lang_modules_scala_java8_compat_2_11_0_7_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/libraries/sbt__org_scala_lang_modules_scala_parser_combinators_2_11_1_1_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_11_1_0_6_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/libraries/sbt__org_scala_lang_scala_library_2_11_12_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_11_12_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/libraries/sbt__org_scala_sbt_test_interface_1_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/libraries/sbt__org_scalacheck_scalacheck_2_11_1_13_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/libraries/sbt__org_scalactic_scalactic_2_11_3_0_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/libraries/sbt__org_scalatest_scalatest_2_11_3_0_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/modules/async-build.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/modules/reactive-async.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/src/main/scala/actorbintree/BinaryTreeSet.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/src/main/scala/actorbintree/BinaryTreeSet.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/src/test/scala/actorbintree/map.sc" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/src/test/scala/actorbintree/map.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$$anonfun$copying$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$$anonfun$copying$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$$anonfun$receive$1$$anonfun$applyOrElse$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$$anonfun$receive$1$$anonfun$applyOrElse$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$$anonfun$receive$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$$anonfun$receive$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$CopyFinished$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$CopyFinished$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$CopyTo$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$CopyTo$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$CopyTo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$CopyTo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$Left$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$Left$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$Right$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$Right$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$$anonfun$dequeueing$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$$anonfun$dequeueing$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$$anonfun$garbageCollecting$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$$anonfun$garbageCollecting$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Contains$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Contains$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Contains.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Contains.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$ContainsResult$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$ContainsResult$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$ContainsResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$ContainsResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$GC$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$GC$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Insert$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Insert$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Insert.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Insert.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$OperationFinished$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$OperationFinished$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$OperationFinished.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$OperationFinished.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Remove$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Remove$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Remove.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Remove.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/test-classes/actorbintree/map.sc" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-actorbintree/actorbintree/target/scala-2.11/test-classes/actorbintree/map.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reactive-week2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reactive-week2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Introducction/async/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Introducction/async/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -81,13 +55,14 @@
     <session id="-1790284786">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Scala" value="8" />
+          <entry key="Scala" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -108,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/reactive/Receptionist.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+            <state relative-caret-position="614">
+              <caret line="132" column="54" selection-start-line="132" selection-start-column="52" selection-end-line="132" selection-end-column="54" />
               <folding>
                 <element signature="e#1989#2010#0" expanded="true" />
               </folding>
@@ -141,11 +116,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/reactive/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="76" column="19" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="19" />
+            <state relative-caret-position="306">
+              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/srcs/akka-actor_2.11-2.5.16-sources.jar!/akka/actor/ActorCell.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="167" column="15" selection-start-line="167" selection-start-column="15" selection-end-line="167" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -183,6 +167,8 @@
       <find>become</find>
       <find>Loggin</find>
       <find>client</find>
+      <find>dispat</find>
+      <find>disp</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -202,11 +188,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-6" />
-    <option name="y" value="-6" />
-    <option name="width" value="1549" />
-    <option name="height" value="877" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="width" value="140" />
+    <option name="height" value="39" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -318,6 +302,7 @@
     </option>
     <option name="modificationStamps">
       <map>
+        <entry key="$PROJECT_DIR$" value="3104774140000" />
         <entry key="$PROJECT_DIR$/build.sbt" value="981653939" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="2567920773" />
       </map>
@@ -350,8 +335,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -426,13 +410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/reactive/Main.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="76" column="19" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/reactive/Getter.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -442,11 +419,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/reactive/Receptionist.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+        <state relative-caret-position="614">
+          <caret line="132" column="54" selection-start-line="132" selection-start-column="52" selection-end-line="132" selection-end-column="54" />
           <folding>
             <element signature="e#1989#2010#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/srcs/akka-actor_2.11-2.5.16-sources.jar!/akka/actor/ActorCell.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="167" column="15" selection-start-line="167" selection-start-column="15" selection-end-line="167" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/reactive/Main.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
         </state>
       </provider>
     </entry>

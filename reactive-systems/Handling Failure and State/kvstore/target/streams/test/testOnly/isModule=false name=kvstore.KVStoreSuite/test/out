@@ -1,0 +1,199 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mKVStoreSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Step1-case1: Primary (in isolation) should properly register itself to the provided Arbiter[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Step1-case2: Primary (in isolation) should react properly to Insert, Remove, Get[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Step2-case1: Secondary (in isolation) should properly register itself to the provided Arbiter[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Step2-case2: Secondary (in isolation) must handle Snapshots *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.AssertionError: assertion failed: timeout (5 seconds) during expectMsgClass waiting for class kvstore.Replica$GetResult[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.assert(Predef.scala:170)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsgClass_internal(TestKit.scala:509)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsgType(TestKit.scala:491)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKit.expectMsgType(TestKit.scala:896)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Tools$Session.get(Tools.scala:81)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step2_SecondarySpec$$anonfun$2.apply(Step2_SecondarySpec.scala:34)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step2_SecondarySpec$$anonfun$2.apply(Step2_SecondarySpec.scala:23)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Step2-case3: Secondary should drop and immediately ack snapshots with older sequence numbers *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.AssertionError: assertion failed: timeout (5 seconds) during expectMsgClass waiting for class kvstore.Replica$GetResult[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.assert(Predef.scala:170)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsgClass_internal(TestKit.scala:509)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsgType(TestKit.scala:491)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKit.expectMsgType(TestKit.scala:896)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Tools$Session.get(Tools.scala:81)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step2_SecondarySpec$$anonfun$3.apply(Step2_SecondarySpec.scala:60)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step2_SecondarySpec$$anonfun$3.apply(Step2_SecondarySpec.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Step2-case4: Secondary should drop snapshots with future sequence numbers *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.AssertionError: assertion failed: timeout (5 seconds) during expectMsgClass waiting for class kvstore.Replica$GetResult[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.assert(Predef.scala:170)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsgClass_internal(TestKit.scala:509)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsgType(TestKit.scala:491)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKit.expectMsgType(TestKit.scala:896)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Tools$Session.get(Tools.scala:81)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step2_SecondarySpec$$anonfun$4.apply(Step2_SecondarySpec.scala:90)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step2_SecondarySpec$$anonfun$4.apply(Step2_SecondarySpec.scala:79)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Step3-case1: Replicator should send snapshots when asked to replicate *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.AssertionError: assertion failed: timeout (3 seconds) during expectMsg while waiting for Snapshot(k1,Some(v1),0)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.assert(Predef.scala:170)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsg_internal(TestKit.scala:402)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsg(TestKit.scala:379)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKit.expectMsg(TestKit.scala:896)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Tools$class.expectAtLeastOneSnapshot(Tools.scala:97)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.KVStoreSuite.expectAtLeastOneSnapshot(KVStoreSuite.scala:7)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step3_ReplicatorSpec$$anonfun$2.apply(Step3_ReplicatorSpec.scala:19)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step3_ReplicatorSpec$$anonfun$2.apply(Step3_ReplicatorSpec.scala:13)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Step3-case2: Replicator should retry until acknowledged by secondary *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.AssertionError: assertion failed: timeout (3 seconds) during expectMsg while waiting for Snapshot(k1,Some(v1),0)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.assert(Predef.scala:170)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsg_internal(TestKit.scala:402)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsg(TestKit.scala:379)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKit.expectMsg(TestKit.scala:896)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step3_ReplicatorSpec$$anonfun$1.apply$mcV$sp(Step3_ReplicatorSpec.scala:41)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step3_ReplicatorSpec$$anonfun$1.apply(Step3_ReplicatorSpec.scala:35)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step3_ReplicatorSpec$$anonfun$1.apply(Step3_ReplicatorSpec.scala:35)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Step4-case1: Secondary should not acknowledge snapshots until persisted *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.AssertionError: assertion failed: timeout (5 seconds) during expectMsgClass waiting for class kvstore.Replica$GetResult[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.assert(Predef.scala:170)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsgClass_internal(TestKit.scala:509)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsgType(TestKit.scala:491)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKit.expectMsgType(TestKit.scala:896)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Tools$Session.get(Tools.scala:81)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step4_SecondaryPersistenceSpec$$anonfun$3.apply(Step4_SecondaryPersistenceSpec.scala:26)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step4_SecondaryPersistenceSpec$$anonfun$3.apply(Step4_SecondaryPersistenceSpec.scala:14)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Step4-case2: Secondary should retry persistence in every 100 milliseconds *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.AssertionError: assertion failed: timeout (5 seconds) during expectMsgClass waiting for class kvstore.Replica$GetResult[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.assert(Predef.scala:170)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsgClass_internal(TestKit.scala:509)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsgType(TestKit.scala:491)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKit.expectMsgType(TestKit.scala:896)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Tools$Session.get(Tools.scala:81)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step4_SecondaryPersistenceSpec$$anonfun$4.apply(Step4_SecondaryPersistenceSpec.scala:56)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step4_SecondaryPersistenceSpec$$anonfun$4.apply(Step4_SecondaryPersistenceSpec.scala:44)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Step5-case1: Primary does not acknowledge updates which have not been persisted *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.AssertionError: assertion failed: timeout (3 seconds) during expectMsg:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.assert(Predef.scala:170)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsgPF(TestKit.scala:420)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKit.expectMsgPF(TestKit.scala:896)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step5_PrimaryPersistenceSpec$$anonfun$1.apply$mcV$sp(Step5_PrimaryPersistenceSpec.scala:25)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step5_PrimaryPersistenceSpec$$anonfun$1.apply(Step5_PrimaryPersistenceSpec.scala:15)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step5_PrimaryPersistenceSpec$$anonfun$1.apply(Step5_PrimaryPersistenceSpec.scala:15)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Step5-case2: Primary retries persistence every 100 milliseconds *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.AssertionError: assertion failed: timeout (3 seconds) during expectMsg:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.assert(Predef.scala:170)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsgPF(TestKit.scala:420)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKit.expectMsgPF(TestKit.scala:896)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step5_PrimaryPersistenceSpec$$anonfun$2.apply$mcV$sp(Step5_PrimaryPersistenceSpec.scala:44)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step5_PrimaryPersistenceSpec$$anonfun$2.apply(Step5_PrimaryPersistenceSpec.scala:34)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step5_PrimaryPersistenceSpec$$anonfun$2.apply(Step5_PrimaryPersistenceSpec.scala:34)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Step5-case3: Primary generates failure after 1 second if persistence fails *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.AssertionError: assertion failed: timeout (3 seconds) during expectMsgClass waiting for class kvstore.Persistence$Persist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.assert(Predef.scala:170)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsgClass_internal(TestKit.scala:509)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsgType(TestKit.scala:482)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKit.expectMsgType(TestKit.scala:896)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step5_PrimaryPersistenceSpec$$anonfun$3.apply$mcV$sp(Step5_PrimaryPersistenceSpec.scala:66)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step5_PrimaryPersistenceSpec$$anonfun$3.apply(Step5_PrimaryPersistenceSpec.scala:56)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step5_PrimaryPersistenceSpec$$anonfun$3.apply(Step5_PrimaryPersistenceSpec.scala:56)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Step5-case4: Primary generates failure after 1 second if global acknowledgement fails *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.AssertionError: assertion failed: timeout (200 milliseconds) during expectMsgClass waiting for class kvstore.Replicator$Snapshot[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.assert(Predef.scala:170)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsgClass_internal(TestKit.scala:509)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsgType(TestKit.scala:491)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKit.expectMsgType(TestKit.scala:896)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step5_PrimaryPersistenceSpec$$anonfun$4$$anonfun$apply$mcV$sp$1.apply$mcV$sp(Step5_PrimaryPersistenceSpec.scala:84)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step5_PrimaryPersistenceSpec$$anonfun$4$$anonfun$apply$mcV$sp$1.apply(Step5_PrimaryPersistenceSpec.scala:82)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step5_PrimaryPersistenceSpec$$anonfun$4$$anonfun$apply$mcV$sp$1.apply(Step5_PrimaryPersistenceSpec.scala:82)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.within(TestKit.scala:360)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKit.within(TestKit.scala:896)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step5_PrimaryPersistenceSpec$$anonfun$4.apply$mcV$sp(Step5_PrimaryPersistenceSpec.scala:82)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Step5-case5: Primary acknowledges only after persistence and global acknowledgement *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.AssertionError: assertion failed: timeout (3 seconds) during expectMsgClass waiting for class kvstore.Replicator$Snapshot[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.assert(Predef.scala:170)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsgClass_internal(TestKit.scala:509)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsgType(TestKit.scala:482)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKit.expectMsgType(TestKit.scala:896)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step5_PrimaryPersistenceSpec$$anonfun$5.apply$mcV$sp(Step5_PrimaryPersistenceSpec.scala:101)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step5_PrimaryPersistenceSpec$$anonfun$5.apply(Step5_PrimaryPersistenceSpec.scala:89)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step5_PrimaryPersistenceSpec$$anonfun$5.apply(Step5_PrimaryPersistenceSpec.scala:89)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Step6-case1: Primary must start replication to new replicas *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.AssertionError: assertion failed: timeout (3 seconds) during expectMsg while waiting for Snapshot(k1,Some(v1),0)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.assert(Predef.scala:170)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsg_internal(TestKit.scala:402)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsg(TestKit.scala:379)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKit.expectMsg(TestKit.scala:896)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Tools$class.expectAtLeastOneSnapshot(Tools.scala:97)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.KVStoreSuite.expectAtLeastOneSnapshot(KVStoreSuite.scala:7)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step6_NewSecondarySpec$$anonfun$1.apply$mcV$sp(Step6_NewSecondarySpec.scala:25)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step6_NewSecondarySpec$$anonfun$1.apply(Step6_NewSecondarySpec.scala:13)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step6_NewSecondarySpec$$anonfun$1.apply(Step6_NewSecondarySpec.scala:13)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Step6-case2: Primary must stop replication to removed replicas and stop Replicator *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.AssertionError: assertion failed: timeout (3 seconds) during expectMsg while waiting for Snapshot(k1,Some(v1),0)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.assert(Predef.scala:170)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsg_internal(TestKit.scala:402)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsg(TestKit.scala:379)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKit.expectMsg(TestKit.scala:896)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step6_NewSecondarySpec$$anonfun$2.apply$mcV$sp(Step6_NewSecondarySpec.scala:48)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step6_NewSecondarySpec$$anonfun$2.apply(Step6_NewSecondarySpec.scala:36)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step6_NewSecondarySpec$$anonfun$2.apply(Step6_NewSecondarySpec.scala:36)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- Step6-case3: Primary must stop replication to removed replicas and waive their outstanding acknowledgements *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.AssertionError: assertion failed: timeout (3 seconds) during expectMsg while waiting for Snapshot(k1,Some(v1),0)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.assert(Predef.scala:170)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsg_internal(TestKit.scala:402)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKitBase$class.expectMsg(TestKit.scala:379)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at akka.testkit.TestKit.expectMsg(TestKit.scala:896)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step6_NewSecondarySpec$$anonfun$3.apply$mcV$sp(Step6_NewSecondarySpec.scala:70)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step6_NewSecondarySpec$$anonfun$3.apply(Step6_NewSecondarySpec.scala:59)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at kvstore.Step6_NewSecondarySpec$$anonfun$3.apply(Step6_NewSecondarySpec.scala:59)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m

@@ -7,3 +7,4 @@ libraryDependencies +=  "com.typesafe.play" %% "play-json" % "2.6.9"
 
 // used for base64 encoding
 libraryDependencies += "commons-codec" % "commons-codec" % "1.10"
+libraryDependencies += "com.typesafe.akka" %% "akka-http-spray-json" % "10.1.9"

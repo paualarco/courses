@@ -1,0 +1,12 @@
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\pauisusanna\IdeaProjects\courses\reactive-systems\Advanced Streaming\reactive-followers\followers\src\main\scala\followers\Server.scala:250:7: dead code following this construct[0m
+[0m[[0m[33mwarn[0m] [0m[0m      ???[0m
+[0m[[0m[33mwarn[0m] [0m[0m      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\pauisusanna\IdeaProjects\courses\reactive-systems\Advanced Streaming\reactive-followers\followers\src\main\scala\followers\Server.scala:113:7: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: Broadcast(_), PrivateMsg(_, _, _), StatusUpdate(_, _)[0m
+[0m[[0m[33mwarn[0m] [0m[0m      event match {[0m
+[0m[[0m[33mwarn[0m] [0m[0m      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\pauisusanna\IdeaProjects\courses\reactive-systems\Advanced Streaming\reactive-followers\followers\src\main\scala\followers\Server.scala:137:22: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: PrivateMsg(_, _, _), Unfollow(_, _, _)[0m
+[0m[[0m[33mwarn[0m] [0m[0m    val isNotified = event match {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mthree warnings found[0m

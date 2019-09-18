@@ -1,6 +1,6 @@
 package kvstore
 
-import akka.actor.{Actor, ActorLogging, ActorRef, OneForOneStrategy, PoisonPill, Props, SupervisorStrategy, Terminated}
+import akka.actor.{Actor, ActorLogging, ActorRef, Cancellable, OneForOneStrategy, PoisonPill, Props, SupervisorStrategy, Terminated}
 import kvstore.Arbiter._
 import akka.pattern.{ask, pipe}
 
@@ -21,6 +21,8 @@ object Replica {
   case class OperationFailed(id: Long) extends OperationReply
   case class GetResult(key: String, valueOption: Option[String], id: Long) extends OperationReply
 
+  case class PersistenceTimeout(key: String, id: Long)
+  case class PersistedData(valueOption: Option[String], sender: ActorRef, scheduler: Cancellable)
   def props(arbiter: ActorRef, persistenceProps: Props): Props = Props(new Replica(arbiter, persistenceProps))
 }
 
@@ -40,6 +42,7 @@ class Replica(val arbiter: ActorRef, persistenceProps: Props) extends Actor with
   // the current set of replicators
   var replicators = Set.empty[ActorRef]
 
+  var pendingPersistance = Map.empty[Long, PersistedData]
   val persistee = context.actorOf(persistenceProps)
   arbiter ! Arbiter.Join
 
@@ -75,29 +78,42 @@ class Replica(val arbiter: ActorRef, persistenceProps: Props) extends Actor with
   val replica: Receive = {
     case Get(key, id) => sender() ! Replica.GetResult(key, kv.get(key), id)
     case Snapshot(key, valueOption, seq) => {
-      val expected = seq == expectedSeq
       log.info(s"Secondary - Snapshot($key, $valueOption, $seq) received, expectedSeq:$expectedSeq")
       if(seq == expectedSeq) {
-        //persistee ! Persist(key, valueOption, seq)
-        expectedSeq += 1L
-        if(valueOption==None){
-          log.info("Secondary - Remove operation")
-          kv = kv - key
-
-          sender() ! SnapshotAck(key, seq)
-          }
-        else {
-          log.info("Secondary - Insert operation")
-          kv = kv.updated(key, valueOption.get)
-          sender() ! SnapshotAck(key, seq)
+        //context.system.scheduler.scheduleOnce(100.milliseconds, self, PersistenceTimeout(key, seq) )
+        val scheduler = context.system.scheduler.schedule(100.milliseconds, 150.milliseconds) {
+          persistee ! Persist(key, valueOption, seq)
         }
+        pendingPersistance = pendingPersistance.updated(seq, Replica.PersistedData(valueOption, sender(), scheduler))
+
       } else if (seq < expectedSeq) {
-        log.info(s"Secondary - Seq:$seq is lower than expectedSeq:$expected")
+        log.info(s"Secondary - Seq:$seq is lower than expectedSeq")
         sender() ! SnapshotAck(key, seq)
 
       }
     }
+    case Persisted(key, seq) => {
+      log.info(s"Replica - Persisted($key, $seq)")
+      expectedSeq += 1L
+      pendingPersistance get seq match {
+        case Some(persist) => {
+          pendingPersistance = pendingPersistance - seq
+          persist.sender ! SnapshotAck(key, seq)
+          persist.scheduler.cancel()
+          persist.valueOption match {
+            case Some(value) => {
+              log.info("Secondary - Insert operation")
+              kv = kv.updated(key, persist.valueOption.get)
+            }
+            case None => {
+              log.info("Secondary - Remove operation")
+              kv = kv - key
+              context.become(replica)
+            }
+          }
+        }
+      }
+    }
   }
-
 }
 

@@ -2,46 +2,165 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86a47a25-9b9f-413a-bb4b-7fbb7a4f708d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/.idea/sbt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/.idea/scala_compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/hydra.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/libraries/sbt__com_typesafe_akka_akka_actor_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/libraries/sbt__com_typesafe_akka_akka_actor_testkit_typed_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/libraries/sbt__com_typesafe_akka_akka_actor_typed_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/libraries/sbt__com_typesafe_akka_akka_protobuf_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/libraries/sbt__com_typesafe_akka_akka_stream_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/libraries/sbt__com_typesafe_akka_akka_stream_testkit_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/libraries/sbt__com_typesafe_akka_akka_stream_typed_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/libraries/sbt__com_typesafe_akka_akka_testkit_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/libraries/sbt__com_typesafe_config_1_3_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/libraries/sbt__com_typesafe_ssl_config_core_2_11_0_3_7_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/libraries/sbt__junit_junit_4_10_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/libraries/sbt__org_hamcrest_hamcrest_core_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/libraries/sbt__org_reactivestreams_reactive_streams_1_0_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/libraries/sbt__org_scala_lang_modules_scala_java8_compat_2_11_0_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/libraries/sbt__org_scala_lang_modules_scala_parser_combinators_2_11_1_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_11_1_0_6_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/libraries/sbt__org_scala_lang_scala_library_2_11_12_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_11_12_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/libraries/sbt__org_scala_sbt_test_interface_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/libraries/sbt__org_scalacheck_scalacheck_2_11_1_13_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/libraries/sbt__org_scalactic_scalactic_2_11_3_0_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/libraries/sbt__org_scalatest_scalatest_2_11_3_0_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/modules/followers-build.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/modules/reactive-followers.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/sbt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Advanced Streaming/reactive-followers/followers/src/main/scala/followers/model/map.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/hydra.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/libraries/sbt__com_typesafe_akka_akka_actor_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/libraries/sbt__com_typesafe_akka_akka_actor_testkit_typed_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/libraries/sbt__com_typesafe_akka_akka_actor_typed_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/libraries/sbt__com_typesafe_akka_akka_protobuf_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/libraries/sbt__com_typesafe_akka_akka_stream_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/libraries/sbt__com_typesafe_akka_akka_stream_testkit_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/libraries/sbt__com_typesafe_akka_akka_stream_typed_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/libraries/sbt__com_typesafe_akka_akka_testkit_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/libraries/sbt__com_typesafe_config_1_3_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/libraries/sbt__com_typesafe_ssl_config_core_2_11_0_3_7_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/libraries/sbt__junit_junit_4_10_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/libraries/sbt__org_hamcrest_hamcrest_core_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/libraries/sbt__org_reactivestreams_reactive_streams_1_0_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/libraries/sbt__org_scala_lang_modules_scala_java8_compat_2_11_0_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/libraries/sbt__org_scala_lang_modules_scala_parser_combinators_2_11_1_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_11_1_0_6_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/libraries/sbt__org_scala_lang_scala_library_2_11_12_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_11_12_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/libraries/sbt__org_scala_sbt_test_interface_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/libraries/sbt__org_scalacheck_scalacheck_2_11_1_13_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/libraries/sbt__org_scalactic_scalactic_2_11_3_0_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/libraries/sbt__org_scalatest_scalatest_2_11_3_0_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/modules/reactive-streaming.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/modules/streaming-build.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/sbt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Akka Streams/reactive-streaming/streaming/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/hydra.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/libraries/sbt__com_typesafe_akka_akka_actor_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/libraries/sbt__com_typesafe_akka_akka_actor_testkit_typed_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/libraries/sbt__com_typesafe_akka_akka_actor_typed_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/libraries/sbt__com_typesafe_akka_akka_protobuf_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/libraries/sbt__com_typesafe_akka_akka_stream_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/libraries/sbt__com_typesafe_akka_akka_stream_testkit_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/libraries/sbt__com_typesafe_akka_akka_stream_typed_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/libraries/sbt__com_typesafe_akka_akka_testkit_2_11_2_5_21_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/libraries/sbt__com_typesafe_config_1_3_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/libraries/sbt__com_typesafe_ssl_config_core_2_11_0_3_7_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/libraries/sbt__junit_junit_4_10_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/libraries/sbt__org_hamcrest_hamcrest_core_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/libraries/sbt__org_reactivestreams_reactive_streams_1_0_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/libraries/sbt__org_scala_lang_modules_scala_java8_compat_2_11_0_7_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/libraries/sbt__org_scala_lang_modules_scala_parser_combinators_2_11_1_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_11_1_0_6_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/libraries/sbt__org_scala_lang_scala_library_2_11_12_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_11_12_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/libraries/sbt__org_scala_sbt_test_interface_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/libraries/sbt__org_scalacheck_scalacheck_2_11_1_13_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/libraries/sbt__org_scalactic_scalactic_2_11_3_0_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/libraries/sbt__org_scalatest_scalatest_2_11_3_0_5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/modules/protocols-build.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/modules/reactive-protocols.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/sbt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Typed Akka/reactive-protocols/protocols/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/src/main/scala/actorbintree/BinaryTreeSet.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/src/main/scala/actorbintree/BinaryTreeSet.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/src/test/scala/actorbintree/map.sc" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/src/test/scala/actorbintree/map.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$$anonfun$copying$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$$anonfun$copying$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$$anonfun$receive$1$$anonfun$applyOrElse$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$$anonfun$receive$1$$anonfun$applyOrElse$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$$anonfun$receive$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$$anonfun$receive$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$CopyFinished$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$CopyFinished$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$CopyTo$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$CopyTo$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$CopyTo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$CopyTo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$Left$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$Left$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$Right$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode$Right$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$$anonfun$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$$anonfun$dequeueing$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$$anonfun$dequeueing$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$$anonfun$garbageCollecting$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$$anonfun$garbageCollecting$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Contains$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Contains$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Contains.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Contains.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$ContainsResult$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$ContainsResult$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$ContainsResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$ContainsResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$GC$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$GC$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Insert$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Insert$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Insert.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Insert.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$OperationFinished$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$OperationFinished$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$OperationFinished.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$OperationFinished.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Remove$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Remove$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Remove.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet$Remove.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/classes/actorbintree/BinaryTreeSet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/test-classes/actorbintree/map.sc" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-actorbintree/actorbintree/target/scala-2.11/test-classes/actorbintree/map.sc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Actors/reactive-link-checker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-link-checker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Actors/reactive-week2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Actors/reactive-week2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/src/main/scala/kvstore/Persistence.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/src/main/scala/kvstore/Persistence.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/src/main/scala/kvstore/Replica.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/src/main/scala/kvstore/Replica.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Persistence$$anonfun$receive$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Persistence$$anonfun$receive$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Persistence$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Persistence$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Persistence$Persist$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Persistence$Persist$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Persistence$Persist.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Persistence$Persist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Persistence$Persisted$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Persistence$Persisted$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Persistence$Persisted.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Persistence$Persisted.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Persistence$PersistenceException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Persistence$PersistenceException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Persistence.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Persistence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Replica$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Replica$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Replica$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Replica$$anonfun$props$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Replica$$anonfun$props$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Replica$$anonfun$receive$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Replica$$anonfun$receive$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Replica$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Replica$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Replica.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Handling Failure and State/kvstore/target/scala-2.11/classes/kvstore/Replica.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/buildSettings.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/project/buildSettings.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$1247ec42b536e1191877$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$1247ec42b536e1191877.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$1247ec42b536e1191877.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$268a93e38ed3e8d160ed$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$268a93e38ed3e8d160ed.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$268a93e38ed3e8d160ed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$436f4e15d616a9d78fcf$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$436f4e15d616a9d78fcf.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$436f4e15d616a9d78fcf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$60f53b34656948f20de2$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$60f53b34656948f20de2.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$60f53b34656948f20de2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$a7c0c81877db882b23b9$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$a7c0c81877db882b23b9.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$a7c0c81877db882b23b9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$b17973d69f5300e05b78$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$b17973d69f5300e05b78.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$b17973d69f5300e05b78.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$e8a86cfc6ccb4e8ccca7$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$e8a86cfc6ccb4e8ccca7.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$e8a86cfc6ccb4e8ccca7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$e9977f57037fff6320e9$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$e9977f57037fff6320e9.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$e9977f57037fff6320e9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$ed26954d2a340af46d61$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$ed26954d2a340af46d61.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$ed26954d2a340af46d61.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/async-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/async-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/async-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/async-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-async-build-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-async-build-compile-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-async-build-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-async-build-compile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-async-build-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-async-build-optional.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-async-build-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-async-build-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-async-build-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-async-build-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-async-build-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-async-build-provided.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-async-build-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-async-build-runtime-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-async-build-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-async-build-runtime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-async-build-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-async-build-scala-tool.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-async-build-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-async-build-test-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-async-build-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-async-build-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/input_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/ivyConfiguration/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/ivyConfiguration/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -83,10 +202,12 @@
     <session id="-599235122">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -107,8 +228,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/async/Async.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-233">
-              <caret line="72" column="43" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="43" />
+            <state relative-caret-position="17">
+              <caret line="54" column="25" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="25" />
               <folding>
                 <element signature="e#15#39#0" expanded="true" />
               </folding>
@@ -160,8 +281,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="140" />
-    <option name="height" value="39" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1937" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -212,7 +335,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561888639565" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../pipelab/flowklorico" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -277,18 +400,19 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="10837927662000" />
+        <entry key="$PROJECT_DIR$" value="10858175515534" />
         <entry key="$PROJECT_DIR$/build.sbt" value="732931123" />
         <entry key="$PROJECT_DIR$/project/MOOCPlugin.scala" value="3710804549" />
         <entry key="$PROJECT_DIR$/project/StudentPlugin.scala" value="991354274" />
         <entry key="$PROJECT_DIR$/project/StyleChecker.scala" value="1829885798" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="2096222171" />
-        <entry key="$PROJECT_DIR$/project/buildSettings.sbt" value="2147578330" />
+        <entry key="$PROJECT_DIR$/project/buildSettings.sbt" value="2805376860" />
         <entry key="$PROJECT_DIR$/project/plugins.sbt" value="3251424836" />
       </map>
     </option>
     <option name="projectSyncType">
       <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
         <entry key="$PROJECT_DIR$/../../../../my-notes/scala/functional-programming-in-scala/forcomp" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../../../../my-notes/scala/functional-programming-in-scala/funsets" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../../../../my-notes/scala/functional-programming-in-scala/objsets" value="PREVIEW" />
@@ -341,10 +465,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="1914" y="-6" width="1549" height="845" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20042644" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20523138" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -358,7 +481,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32962447" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32962447" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.32962447" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" weight="0.27735645" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -382,8 +505,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/scala/async/Async.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-233">
-          <caret line="72" column="43" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="43" />
+        <state relative-caret-position="17">
+          <caret line="54" column="25" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="25" />
           <folding>
             <element signature="e#15#39#0" expanded="true" />
           </folding>

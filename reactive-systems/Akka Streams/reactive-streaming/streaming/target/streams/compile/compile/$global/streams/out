@@ -1,0 +1,4 @@
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\pauisusanna\IdeaProjects\courses\reactive-systems\Akka Streams\reactive-streaming\streaming\src\main\scala\streaming\SimpleStreaming.scala:69:10: method recoverWith in trait FlowOps is deprecated: Use recoverWithRetries instead.[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ints.recoverWith{ case e: IllegalStateException => fallback}[0m
+[0m[[0m[33mwarn[0m] [0m[0m         ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

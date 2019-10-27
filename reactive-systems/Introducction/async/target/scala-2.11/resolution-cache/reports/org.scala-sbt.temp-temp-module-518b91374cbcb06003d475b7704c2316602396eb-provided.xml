@@ -4,10 +4,10 @@
 	<info
 		organisation="org.scala-sbt.temp"
 		module="temp-module-518b91374cbcb06003d475b7704c2316602396eb"
-		revision="1.1.7"
+		revision="1.2.5"
 		conf="provided"
 		confs="compile, runtime, test, provided, optional"
-		date="20190627195047"/>
+		date="20191006224345"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>

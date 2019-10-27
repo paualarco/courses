@@ -103,7 +103,6 @@ class AsyncSuite extends FunSuite {
     val eventuallyResult =
       Async.insist(() => Future { counter.incrementAndGet() }, maxAttempts = 3)
     Await.ready(eventuallyResult, 100.milliseconds).value.get
-    print("Counter: " + counter.get())
     assertResult(1)(counter.get())
   }
 
@@ -125,8 +124,6 @@ class AsyncSuite extends FunSuite {
     }
     val eventuallyInt = Async.futurize(succeeding).computeIntAsync()
     Await.ready(eventuallyInt, 200.milliseconds)
-    print("Counter: " + eventuallyInt.value.get)
-
     assertResult(success)(eventuallyInt.value.get)
   }
 

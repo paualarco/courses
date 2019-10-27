@@ -1,4 +1,2 @@
-[0m[[0m[33mwarn[0m] [0m[0mC:\Users\pauisusanna\IdeaProjects\courses\reactive-systems\Introducction\async\src\main\scala\async\Async.scala:84:19: Procedure syntax is deprecated. Convert procedure `iterate` to method by adding `: Unit =`.[0m
-[0m[[0m[33mwarn[0m] [0m[0m    def iterate() {[0m
-[0m[[0m[33mwarn[0m] [0m[0m                  ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0mdebug[0m] [0m[0mAcquiring lock on file /Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Introducction/async/project/target/.sbt-compilation-infos/async-compile/.sbt-idea-lock ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mReleasing lock on file /Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Introducction/async/project/target/.sbt-compilation-infos/async-compile/.sbt-idea-lock.[0m

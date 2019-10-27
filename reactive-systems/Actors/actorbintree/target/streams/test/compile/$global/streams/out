@@ -1,0 +1,192 @@
+[0m[[0m[0mdebug[0m] [0m[0mAcquiring lock on file /Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/project/target/.sbt-compilation-infos/actorbintree-test/.sbt-idea-lock ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:142:3: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // Int Messages[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:142:4: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // Int Messages[0m
+[0m[[0m[31merror[0m] [0m[0m   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:142:5: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // Int Messages[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:142:6: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // Int Messages[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:142:7: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // Int Messages[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:142:8: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // Int Messages[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:142:9: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // Int Messages[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:143:3: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case x: Int => 1[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:143:4: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case x: Int => 1[0m
+[0m[[0m[31merror[0m] [0m[0m   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:143:5: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case x: Int => 1[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:143:6: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case x: Int => 1[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:143:7: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case x: Int => 1[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:143:8: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case x: Int => 1[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:143:9: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case x: Int => 1[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:144:3: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // String Messages[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:144:4: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // String Messages[0m
+[0m[[0m[31merror[0m] [0m[0m   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:144:5: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // String Messages[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:144:6: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // String Messages[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:144:7: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // String Messages[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:144:8: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // String Messages[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:144:9: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // String Messages[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:145:3: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case x: String => 0[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:145:4: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case x: String => 0[0m
+[0m[[0m[31merror[0m] [0m[0m   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:145:5: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case x: String => 0[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:145:6: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case x: String => 0[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:145:7: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case x: String => 0[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:145:8: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case x: String => 0[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:145:9: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case x: String => 0[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:146:3: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // Long messages[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:146:4: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // Long messages[0m
+[0m[[0m[31merror[0m] [0m[0m   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:146:5: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // Long messages[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:146:6: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // Long messages[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:146:7: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // Long messages[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:146:8: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // Long messages[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:146:9: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // Long messages[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:147:3: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case x: Long => 2[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:147:4: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case x: Long => 2[0m
+[0m[[0m[31merror[0m] [0m[0m   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:147:5: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case x: Long => 2[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:147:6: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case x: Long => 2[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:147:7: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case x: Long => 2[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:147:8: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case x: Long => 2[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:147:9: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case x: Long => 2[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:148:3: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // other messages[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:148:4: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // other messages[0m
+[0m[[0m[31merror[0m] [0m[0m   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:148:5: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // other messages[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:148:6: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // other messages[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:148:7: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // other messages[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:148:8: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // other messages[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:148:9: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               // other messages[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:149:3: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case _ => 3[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:149:4: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case _ => 3[0m
+[0m[[0m[31merror[0m] [0m[0m   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:149:5: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case _ => 3[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:149:6: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case _ => 3[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:149:7: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case _ => 3[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:149:8: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case _ => 3[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:149:9: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m               case _ => 3[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:150:3: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m          })[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:150:4: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m          })[0m
+[0m[[0m[31merror[0m] [0m[0m   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:150:5: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m          })[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:150:6: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m          })[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:150:7: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m          })[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:150:8: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m          })[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/src/test/scala/actorbintree/BinaryTreeSuite.scala:150:9: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m          })[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m63 errors found[0m
+[0m[[0m[0mdebug[0m] [0m[0mReleasing lock on file /Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Actors/actorbintree/project/target/.sbt-compilation-infos/actorbintree-test/.sbt-idea-lock.[0m

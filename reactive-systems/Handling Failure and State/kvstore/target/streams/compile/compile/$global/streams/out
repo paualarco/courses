@@ -1,4 +1,21 @@
-[0m[[0m[33mwarn[0m] [0m[0mC:\Users\pauisusanna\IdeaProjects\courses\reactive-systems\Handling Failure and State\kvstore\src\main\scala\kvstore\Replica.scala:61:30: discarded non-Unit value[0m
-[0m[[0m[33mwarn[0m] [0m[0m    case _ => OperationFailed(0)[0m
-[0m[[0m[33mwarn[0m] [0m[0m                             ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0mdebug[0m] [0m[0mAcquiring lock on file /Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Handling Failure and State/kvstore/project/target/.sbt-compilation-infos/kvstore-compile/.sbt-idea-lock ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Handling Failure and State/kvstore/src/main/scala/kvstore/Replica.scala:192:29: discarded non-Unit value[0m
+[0m[[0m[33mwarn[0m] [0m[0m      pendingPersistance.map{[0m
+[0m[[0m[33mwarn[0m] [0m[0m                            ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Handling Failure and State/kvstore/src/main/scala/kvstore/Replica.scala:237:35: discarded non-Unit value[0m
+[0m[[0m[33mwarn[0m] [0m[0m          persist.scheduler.cancel()[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Handling Failure and State/kvstore/src/main/scala/kvstore/Replica.scala:127:26: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: None, Some(PersistedSecondaryData(_, _, _))[0m
+[0m[[0m[33mwarn[0m] [0m[0m      pendingPersistance get id match {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                         ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Handling Failure and State/kvstore/src/main/scala/kvstore/Replica.scala:174:26: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: None, Some(PersistedSecondaryData(_, _, _))[0m
+[0m[[0m[33mwarn[0m] [0m[0m      pendingPersistance get id match {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                         ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Handling Failure and State/kvstore/src/main/scala/kvstore/Replica.scala:233:26: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: None, Some(PersistedPrimaryData(_, _, _, _, _, _, _, _))[0m
+[0m[[0m[33mwarn[0m] [0m[0m      pendingPersistance get seq match {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                         ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m5 warnings found[0m
+[0m[[0m[0mdebug[0m] [0m[0mReleasing lock on file /Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Handling Failure and State/kvstore/project/target/.sbt-compilation-infos/kvstore-compile/.sbt-idea-lock.[0m

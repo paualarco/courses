@@ -137,12 +137,7 @@ object Server {
     val (event, followers) = eventAndFollowers
     val isNotified = event match {
       case f: Follow => if(userId == f.toUserId) true else false
-      case b: Broadcast => {
-        println(s"Broadcast $b ")
-        val keysList: List[Int] =  followers.keys.toList
-        val valuesList: List[Int] = followers.values.reduce(_ ++ _).toList
-        (keysList::valuesList).contains(userId)
-      }
+      case b: Broadcast => true
       case s: StatusUpdate => followers.getOrElse(userId, Set[Int]()).contains(s.fromUserId)
     }
     isNotified
@@ -184,8 +179,12 @@ class Server()(implicit executionContext: ExecutionContext, materializer: Materi
       * of the decoded events associated with the current state
       * of the followers Map.
       */
-    val incomingDataFlow: Flow[ByteString, (Event, Followers), NotUsed] =
-      unimplementedFlow
+    val incomingDataFlow: Flow[ByteString, (Event, Followers), NotUsed] = {
+      Flow[ByteString]
+        .via(eventParserFlow)
+        .via(reintroduceOrdering)
+        .via(followersFlow)
+    }
 
     // Wires the MergeHub and the BroadcastHub together and runs the graph
     MergeHub.source[ByteString](256)
@@ -208,7 +207,7 @@ class Server()(implicit executionContext: ExecutionContext, materializer: Materi
     * is completed. Compare the documentation of `Flow.fromSinkAndSource` and
     * `Flow.fromSinkAndSourceCoupled` to find how to achieve that.
     */
-  val eventsFlow: Flow[ByteString, Nothing, NotUsed] = ???
+  val eventsFlow: Flow[ByteString, Nothing, NotUsed] = Flow.fromSinkAndSourceCoupled(inboundSink,Source.maybe[ByteString]())
 
   /**
     * @return The source of events for the given user

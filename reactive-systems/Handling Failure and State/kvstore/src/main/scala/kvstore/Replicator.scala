@@ -39,12 +39,13 @@ class Replicator(val replica: ActorRef) extends Actor with ActorLogging {
   def receive: Receive = {
     case Replicate(key, valueOption, seq) => {
       log.info(s"Replicator - Replicate($key, $valueOption, $seq)")
+      replica ! Snapshot(key, valueOption, seq)
       val replicareScheduler = context.system.scheduler.schedule(100.milliseconds, 150.milliseconds) {
         replica ! Snapshot(key, valueOption, seq)
       }
       acks = acks.updated(seq, (sender(), Replicate(key, valueOption, seq), replicareScheduler))
-
     }
+
     case SnapshotAck(key, seq) => {
       val request = acks(seq)
       request._3.cancel()

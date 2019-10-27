@@ -138,7 +138,7 @@ class BinaryTreeSuite(_system: ActorSystem) extends TestKit(_system) with FunSui
 
   class MyPriorityActorMailbox(settings: ActorSystem.Settings, config: Config)
     extends UnboundedPriorityMailbox (
-      PriorityGenerator {
+      PriorityGenerator{
                // Int Messages
                case x: Int => 1
                // String Messages

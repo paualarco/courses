@@ -1,11 +1,11 @@
-[0m[[0m[0minfo[0m] [0m[0mPackaging C:\Users\pauisusanna\IdeaProjects\courses\reactive-systems\Handling Failure and State\kvstore\target\scala-2.11\reactive-kvstore_2.11-0.1.0-SNAPSHOT-sources.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mPackaging /Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Handling Failure and State/kvstore/target/scala-2.11/reactive-kvstore_2.11-0.1.0-SNAPSHOT-sources.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	kvstore\Arbiter.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\pauisusanna\IdeaProjects\courses\reactive-systems\Handling Failure and State\kvstore\src\main\scala\kvstore\Arbiter.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0m	kvstore\Persistence.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\pauisusanna\IdeaProjects\courses\reactive-systems\Handling Failure and State\kvstore\src\main\scala\kvstore\Persistence.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0m	kvstore\Replica.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\pauisusanna\IdeaProjects\courses\reactive-systems\Handling Failure and State\kvstore\src\main\scala\kvstore\Replica.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0m	kvstore\Replicator.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\pauisusanna\IdeaProjects\courses\reactive-systems\Handling Failure and State\kvstore\src\main\scala\kvstore\Replicator.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	kvstore/Persistence.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Handling Failure and State/kvstore/src/main/scala/kvstore/Persistence.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	kvstore/Arbiter.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Handling Failure and State/kvstore/src/main/scala/kvstore/Arbiter.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	kvstore/Replicator.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Handling Failure and State/kvstore/src/main/scala/kvstore/Replicator.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	kvstore/Replica.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Handling Failure and State/kvstore/src/main/scala/kvstore/Replica.scala[0m
 [0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m

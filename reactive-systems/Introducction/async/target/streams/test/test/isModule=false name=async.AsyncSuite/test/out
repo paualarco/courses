@@ -2,41 +2,16 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- transformSuccess should transform successful computations[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- transformSuccess should propagate the failure of a failed computation[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- recoverFailure should recover from failed computations[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- recoverFailure should propagate successful computations *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  Expected Success(-100146124), but got Success(-1) (AsyncSuite.scala:63)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- recoverFailure should propagate successful computations[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- sequenceComputations should start the second computation after the first has completed[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- sequenceComputations should not start the second computation if the first has failed[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- concurrentComputations should start both computations independently of each other’s completion[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- insist should not retry successful computations *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.NullPointerException:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.concurrent.Await$$anonfun$ready$1.apply(package.scala:169)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.concurrent.Await$$anonfun$ready$1.apply(package.scala:169)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:53)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.concurrent.Await$.ready(package.scala:169)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at async.AsyncSuite$$anonfun$10.apply(AsyncSuite.scala:105)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at async.AsyncSuite$$anonfun$10.apply(AsyncSuite.scala:101)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- insist should retry failed computations *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.NullPointerException:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.concurrent.Await$$anonfun$ready$1.apply(package.scala:169)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.concurrent.Await$$anonfun$ready$1.apply(package.scala:169)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:53)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.concurrent.Await$.ready(package.scala:169)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at async.AsyncSuite$$anonfun$12.apply(AsyncSuite.scala:116)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at async.AsyncSuite$$anonfun$12.apply(AsyncSuite.scala:109)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- insist should not retry successful computations[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- insist should retry failed computations[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m- futurize should handle successful computation results *** FAILED ***[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:230)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at async.Async$.futurize(Async.scala:117)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at async.Async$.futurize(Async.scala:119)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at async.AsyncSuite$$anonfun$14.apply(AsyncSuite.scala:125)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at async.AsyncSuite$$anonfun$14.apply(AsyncSuite.scala:120)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
@@ -49,7 +24,7 @@
 [0m[[0m[0minfo[0m] [0m[0m[31m- futurize should handle failed computation results *** FAILED ***[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:230)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at async.Async$.futurize(Async.scala:117)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at async.Async$.futurize(Async.scala:119)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at async.AsyncSuite$$anonfun$15.apply(AsyncSuite.scala:135)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at async.AsyncSuite$$anonfun$15.apply(AsyncSuite.scala:130)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m

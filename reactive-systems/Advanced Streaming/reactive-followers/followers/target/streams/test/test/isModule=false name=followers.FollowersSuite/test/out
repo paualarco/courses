@@ -1,0 +1,91 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mFollowersSuite:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- reframedFlow: chunks containing exactly one message should pass through[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- reframedFlow: chunks containing fragments of messages should be re-assembled[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- reframedFlow: reject an input stream that is completed in the middle of a frame[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- eventParserFlow: successfully parse events[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- reintroduceOrdering: pass through a sorted stream directly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- reintroduceOrdering: reintroduce ordering, 2 off[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- followersFlow: add a follower[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- followersFlow: remove a follower[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- identityParserSink: extract identity[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- identityParserSink: re-frame incoming bytes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- isNotified: always notify users of broadcast messages[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- isNotified: notify the followers of an user that updates his status[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- eventsFlow: downstream should receive completion when the event source is completed *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:230)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at followers.Server.<init>(Server.scala:209)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at followers.FollowersSuite$$anonfun$15.apply(FollowersSuite.scala:140)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at followers.FollowersSuite$$anonfun$15.apply(FollowersSuite.scala:139)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite$class.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- incomingDataFlow: reframe, reorder and compute followers *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:230)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at followers.Server.<init>(Server.scala:209)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at followers.FollowersSuite$$anonfun$16.apply(FollowersSuite.scala:152)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at followers.FollowersSuite$$anonfun$16.apply(FollowersSuite.scala:151)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite$class.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- outgoingFlow: filter out events that should not be delivered to the given user *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:230)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at followers.Server.<init>(Server.scala:209)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at followers.FollowersSuite$$anonfun$17.apply(FollowersSuite.scala:166)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at followers.FollowersSuite$$anonfun$17.apply(FollowersSuite.scala:165)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite$class.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- clientFlow: handle one client following another *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:230)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at followers.Server.<init>(Server.scala:209)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at followers.FollowersSuite$$anonfun$18.apply(FollowersSuite.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at followers.FollowersSuite$$anonfun$18.apply(FollowersSuite.scala:185)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite$class.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- clientFlow: ensure that event before issuing a Follow is not sent to that follower *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:230)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at followers.Server.<init>(Server.scala:209)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at followers.FollowersSuite$$anonfun$19.apply(FollowersSuite.scala:205)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at followers.FollowersSuite$$anonfun$19.apply(FollowersSuite.scala:203)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite$class.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- clientFlow: ensure that users get notified from private messages *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:230)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at followers.Server.<init>(Server.scala:209)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at followers.FollowersSuite$$anonfun$20.apply(FollowersSuite.scala:221)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at followers.FollowersSuite$$anonfun$20.apply(FollowersSuite.scala:220)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:186)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite$class.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m

@@ -1,6 +1,6 @@
 package kvstore
 
-import akka.actor.{ActorRef, Actor}
+import akka.actor.{ActorRef, Actor, OneForOneStrategy, SupervisorStrategy}
 import scala.collection.immutable
 
 object Arbiter {
@@ -19,6 +19,13 @@ class Arbiter extends Actor {
   import Arbiter._
   var leader: Option[ActorRef] = None
   var replicas = Set.empty[ActorRef]
+
+  override val supervisorStrategy = OneForOneStrategy() {
+    case _: Exception =>
+      replicas -= sender
+      leader.foreach { _ ! Replicas(replicas) }
+      SupervisorStrategy.Restart
+  }
 
   def receive = {
     case Join =>

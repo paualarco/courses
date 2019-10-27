@@ -1,5 +1,7 @@
 package kvstore
 
+import akka.actor
+import akka.actor.SupervisorStrategy.{Escalate, Restart}
 import akka.actor.{Actor, ActorLogging, ActorRef, Cancellable, OneForOneStrategy, PoisonPill, Props, SupervisorStrategy, Terminated}
 import kvstore.Arbiter._
 import akka.pattern.{ask, pipe}
@@ -31,12 +33,13 @@ object Replica {
                                   timeoutScheduler: Cancellable,
                                   globalAckTimeoutScheduler: Cancellable,
                                   isLocallyPersisted: Boolean,
-                                  isGloballyPersisted: Boolean,
+                                  //isGloballyPersisted: Boolean,
                                   replicatorsAcknowledgement:  Set[ActorRef]) extends PersistedData
 
   def props(arbiter: ActorRef, persistenceProps: Props): Props = Props(new Replica(arbiter, persistenceProps))
   case class OperationTimeout(id: Long, sender: ActorRef)
 }
+
 
 class Replica(val arbiter: ActorRef, persistenceProps: Props) extends Actor with ActorLogging {
   import Replica._
@@ -55,9 +58,22 @@ class Replica(val arbiter: ActorRef, persistenceProps: Props) extends Actor with
   //var replicators = Set.empty[ActorRef]
 
   var pendingPersistance = Map.empty[Long, PersistedData]
-  val persistee = context.actorOf(persistenceProps)
+  var persistee = context.actorOf(persistenceProps)
   context.watch(persistee)
   arbiter ! Arbiter.Join
+
+  override val supervisorStrategy: OneForOneStrategy = OneForOneStrategy() {
+    case _: PersistenceException => Restart
+    case t =>
+      super.supervisorStrategy.decider.applyOrElse(t, (_: Any) => Escalate)
+  }
+
+  override def preStart(): Unit = {
+    log.debug("join the replica set")
+    arbiter ! Join
+    log.debug("start persistence service")
+    persistee = context.actorOf(persistenceProps, "persistence")
+  }
 
   def receive = {
     case JoinedPrimary   => context.become(leader)
@@ -68,7 +84,7 @@ class Replica(val arbiter: ActorRef, persistenceProps: Props) extends Actor with
   val leader: Receive = {
     case Snapshot(key, valueOption, seq) => log.info("Replica leader - SNAPSHOT")
 
-      case Get(key, id) => sender() ! Replica.GetResult(key, kv.get(key), id)
+    case Get(key, id) => sender() ! Replica.GetResult(key, kv.get(key), id)
 
     case Insert(key, value, id) => {
       kv = kv.updated(key, value)
@@ -91,7 +107,7 @@ class Replica(val arbiter: ActorRef, persistenceProps: Props) extends Actor with
         timeoutScheduler,
         globalAckTimeoutScheduler,
         false,
-        secondaries.isEmpty,
+        //secondaries.isEmpty,
         Set.empty[ActorRef])
 
       pendingPersistance = pendingPersistance.updated(id, persistedPrimaryData)
@@ -100,6 +116,7 @@ class Replica(val arbiter: ActorRef, persistenceProps: Props) extends Actor with
     case OperationTimeout(id, client) => {
       log.error(s"Replica OperationTImeout! The operation failed, returning OperationFailed($id)")
       client ! OperationFailed(id)
+      pendingPersistance = pendingPersistance - id
     }
 
     case Remove(key, id) => {
@@ -118,8 +135,7 @@ class Replica(val arbiter: ActorRef, persistenceProps: Props) extends Actor with
           timeoutScheduler,
           globalAckTimeoutScheduler,
           false,
-          secondaries.isEmpty,
-          Set.empty[ActorRef]))
+          Set.empty[actor.ActorRef]))
     }
 
     case Persisted(key, id) => {
@@ -131,7 +147,12 @@ class Replica(val arbiter: ActorRef, persistenceProps: Props) extends Actor with
           persistedData.timeoutScheduler.cancel()
           val updatedPersistedData = persistedData.copy(isLocallyPersisted = true)
           pendingPersistance = pendingPersistance.updated(id, updatedPersistedData)
-          if(updatedPersistedData.isLocallyPersisted && updatedPersistedData.isGloballyPersisted) persistedData.sender ! OperationAck(id)
+          if(updatedPersistedData.isLocallyPersisted &&  (secondaries.size == updatedPersistedData.replicatorsAcknowledgement.size)) {
+            log.info(s" Primary Replica - Sending OperationAck(${id}) - ${updatedPersistedData}")
+            persistedData.globalAckTimeoutScheduler.cancel()
+            persistedData.sender ! OperationAck(id)
+            pendingPersistance = pendingPersistance - id
+          }
 
         }
 
@@ -160,10 +181,14 @@ class Replica(val arbiter: ActorRef, persistenceProps: Props) extends Actor with
 
       secondaries = secondaries -- droppedSecondaries.keySet ++ newSecondaries
 
-      for {
-        replicator <- newReplicators
-        (key, value) <- kv
-      } replicator ! Replicate(key, Some(value), 0L)
+      newReplicators foreach {
+        replicator =>
+         kv foreach {
+           case (key, value) => {
+             replicator ! Replicate(key, Some(value), 0L)
+           }
+         }
+      }
 
       droppedReplicators.foreach { context.stop(_) }
     }
@@ -175,14 +200,21 @@ class Replica(val arbiter: ActorRef, persistenceProps: Props) extends Actor with
         case Some(persistedData: PersistedPrimaryData) => {
           val updatedReplicatorsAcknowledgement = persistedData.replicatorsAcknowledgement + sender()
 
-          val isGloballyAcknowledged = updatedReplicatorsAcknowledgement.size >= secondaries.size
+          val isGloballyAcknowledged = updatedReplicatorsAcknowledgement.isEmpty
           //pendingPersistance = pendingPersistance - id
           if(isGloballyAcknowledged) {
             persistedData.globalAckTimeoutScheduler.cancel()
           }
-          val updatedPersistedData = persistedData.copy(replicatorsAcknowledgement = updatedReplicatorsAcknowledgement, isGloballyPersisted = isGloballyAcknowledged)
+          val updatedPersistedData = persistedData.copy(replicatorsAcknowledgement = updatedReplicatorsAcknowledgement) //, isGloballyPersisted = isGloballyAcknowledged)
           pendingPersistance = pendingPersistance.updated(id, updatedPersistedData)
-          if(updatedPersistedData.isLocallyPersisted && updatedPersistedData.isGloballyPersisted) persistedData.sender ! OperationAck(id)
+          if(updatedPersistedData.isLocallyPersisted && (secondaries.size == updatedPersistedData.replicatorsAcknowledgement.size)) {
+            log.info(s"Replica - Sending OperationAck(${id}) - $persistedData")
+            persistedData.sender ! OperationAck(id)
+            pendingPersistance = pendingPersistance - id
+          }
+        }
+        case None => {
+          log.info("Replica -  Not replicated event received in pendingPersistance")
         }
       }
     }
@@ -236,6 +268,8 @@ class Replica(val arbiter: ActorRef, persistenceProps: Props) extends Actor with
           persist.sender ! SnapshotAck(key, seq)
           persist.scheduler.cancel()
         }
+        case None =>
+          log.info(s"Replica - PendingPersistance for ${seq} not found")
       }
     }
   }

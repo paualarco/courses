@@ -49,6 +49,7 @@ class Replicator(val replica: ActorRef) extends Actor with ActorLogging {
     case SnapshotAck(key, seq) => {
       val request = acks(seq)
       request._3.cancel()
+      log.info(s"Replicator - received SnapshotAck($key, $seq)")
       request._1 ! Replicated(key, request._2.id)
   }
   }

@@ -120,6 +120,7 @@ object Server {
           println(s"Unfollow event: $u")
           followers = followers.updated(u.fromUserId, {followers.getOrElse(u.fromUserId, Set[Int]()) - u.toUserId})
         }
+        case e: Event => println(s"Event $e not handled at followers flow")
       }
         (event, followers) :: Nil
 
@@ -207,7 +208,9 @@ class Server()(implicit executionContext: ExecutionContext, materializer: Materi
     * is completed. Compare the documentation of `Flow.fromSinkAndSource` and
     * `Flow.fromSinkAndSourceCoupled` to find how to achieve that.
     */
-  val eventsFlow: Flow[ByteString, Nothing, NotUsed] = Flow.fromSinkAndSourceCoupled(inboundSink,Source.maybe[ByteString]())
+  val eventsFlow: Flow[ByteString, Nothing, NotUsed] = {
+    Flow.fromSinkAndSourceCoupled(inboundSink, Source.maybe)
+  }
 
   /**
     * @return The source of events for the given user
@@ -246,8 +249,7 @@ class Server()(implicit executionContext: ExecutionContext, materializer: Materi
 //    clientIdPromise.future.map(id => actorSystem.log.info("Connected follower: {}", id.userId))
 
     // A sink that parses the client identity and completes `clientIdPromise` with it
-    val incoming: Sink[ByteString, NotUsed] =
-      ???
+    val incoming: Sink[ByteString, NotUsed] = ???
 
     val outgoing = Source.fromFutureSource(clientIdPromise.future.map { identity =>
       outgoingFlow(identity.userId)

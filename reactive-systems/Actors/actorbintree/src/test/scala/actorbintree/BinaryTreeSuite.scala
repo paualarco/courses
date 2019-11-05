@@ -136,18 +136,8 @@ class BinaryTreeSuite(_system: ActorSystem) extends TestKit(_system) with FunSui
     }
   }
 
-  class MyPriorityActorMailbox(settings: ActorSystem.Settings, config: Config)
-    extends UnboundedPriorityMailbox (
-      PriorityGenerator{
-               // Int Messages
-               case x: Int => 1
-               // String Messages
-               case x: String => 0
-               // Long messages
-               case x: Long => 2
-               // other messages
-               case _ => 3
-          })
+
+
   test("behave identically to built-in set (includes GC)") {
     val rnd = new Random()
     def randomOperations(requester: ActorRef, count: Int): Seq[Operation] = {

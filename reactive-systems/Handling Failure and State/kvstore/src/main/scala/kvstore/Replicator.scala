@@ -23,7 +23,7 @@ class Replicator(val replica: ActorRef) extends Actor with ActorLogging {
    */
 
   // map from sequence number to pair of sender and request
-  var acks = Map.empty[Long, (ActorRef, Replicate, Cancellable)]
+  var acks = Map.empty[Long, ReplicateStatus]
   // a sequence of not-yet-sent snapshots (you can disregard this if not implementing batching)
   var pending = Vector.empty[Snapshot]
   
@@ -34,23 +34,37 @@ class Replicator(val replica: ActorRef) extends Actor with ActorLogging {
     ret
   }
 
+  case class ReplicateStatus(id: Long,
+                             key: String,
+                             valueOption: Option[String],
+                             primary: ActorRef,
+                             timeout: Cancellable)
   
   /* TODO Behavior for the Replicator. */
   def receive: Receive = {
-    case Replicate(key, valueOption, seq) => {
-      log.info(s"Replicator - Replicate($key, $valueOption, $seq)")
+    case Replicate(key, valueOption, id) => {
+      log.info(s"Replicator - Replicate($key, $valueOption, $id)")
+      val seq = nextSeq()
+      val replicateStatus = ReplicateStatus (
+        id = id,
+        key = key,
+        valueOption = valueOption,
+        primary = sender,
+        timeout =
+          context.system.scheduler.schedule(100.milliseconds, 150.milliseconds) {
+            replica ! Snapshot(key, valueOption, seq)
+          }
+      )
       replica ! Snapshot(key, valueOption, seq)
-      val replicareScheduler = context.system.scheduler.schedule(100.milliseconds, 150.milliseconds) {
-        replica ! Snapshot(key, valueOption, seq)
-      }
-      acks = acks.updated(seq, (sender(), Replicate(key, valueOption, seq), replicareScheduler))
+      val replicareScheduler =
+      acks = acks.updated(seq, replicateStatus)
     }
 
     case SnapshotAck(key, seq) => {
       val request = acks(seq)
-      request._3.cancel()
+      request.timeout.cancel()
       log.info(s"Replicator - received SnapshotAck($key, $seq)")
-      request._1 ! Replicated(key, request._2.id)
+      request.primary ! Replicated(key, request.id)
   }
   }
 

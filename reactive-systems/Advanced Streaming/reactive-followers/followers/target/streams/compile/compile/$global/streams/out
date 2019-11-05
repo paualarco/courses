@@ -1,12 +1,2 @@
 [0m[[0m[0mdebug[0m] [0m[0mAcquiring lock on file /Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Advanced Streaming/reactive-followers/followers/project/target/.sbt-compilation-infos/followers-compile/.sbt-idea-lock ...[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Advanced Streaming/reactive-followers/followers/src/main/scala/followers/Server.scala:210:110: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : akka.stream.scaladsl.Source[akka.util.ByteString,scala.concurrent.Promise[Option[akka.util.ByteString]]][0m
-[0m[[0m[31merror[0m] [0m[0m required: akka.stream.Graph[akka.stream.SourceShape[Nothing],Any][0m
-[0m[[0m[31merror[0m] [0m[0m  val eventsFlow: Flow[ByteString, Nothing, NotUsed] = Flow.fromSinkAndSourceCoupled(inboundSink,Source.maybe[ByteString])[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                                             ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Advanced Streaming/reactive-followers/followers/src/main/scala/followers/Server.scala:250:7: dead code following this construct[0m
-[0m[[0m[33mwarn[0m] [0m[0m      ???[0m
-[0m[[0m[33mwarn[0m] [0m[0m      ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
 [0m[[0m[0mdebug[0m] [0m[0mReleasing lock on file /Users/paualarco/Documents/paualarco-workspace/courses/reactive-systems/Advanced Streaming/reactive-followers/followers/project/target/.sbt-compilation-infos/followers-compile/.sbt-idea-lock.[0m

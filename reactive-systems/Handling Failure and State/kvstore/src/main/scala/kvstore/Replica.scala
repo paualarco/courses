@@ -27,7 +27,8 @@ object Replica {
 
   sealed trait PersistedData
   case class PersistedSecondaryData(valueOption: Option[String], sender: ActorRef, scheduler: Cancellable) extends PersistedData
-  case class PersistedPrimaryData(valueOption: Option[String],
+  case class PersistedPrimaryData(key: String,
+                                  valueOption: Option[String],
                                   sender: ActorRef,
                                   scheduler: Cancellable,
                                   timeoutScheduler: Cancellable,
@@ -82,25 +83,28 @@ class Replica(val arbiter: ActorRef, persistenceProps: Props) extends Actor with
 
   /* TODO Behavior for  the leader role. */
   val leader: Receive = {
-    case Snapshot(key, valueOption, seq) => log.info("Replica leader - SNAPSHOT")
+    case Snapshot(key, valueOption, seq) => log.info("Primary - SNAPSHOT")
 
     case Get(key, id) => sender() ! Replica.GetResult(key, kv.get(key), id)
 
     case Insert(key, value, id) => {
+      log.info(s"Primary Insert - Received Insert($key, $value, $id)")
+
       kv = kv.updated(key, value)
       //secondaries.values.foreach(_ ! Replicator.Replicate(key, Some(value), id))
       val scheduler = context.system.scheduler.schedule(100.milliseconds, 150.milliseconds) {
         persistee ! Persist(key, Some(value), id)
       }
-      log.info("Leader Replica - Sending Replicate Insert message to all replicators")
+      log.info("Primary Insert - Sending Replicate message to all replicators")
       secondaries.values foreach (_ ! Replicate(key, Some(value), id))
 
       val timeoutScheduler = context.system.scheduler.scheduleOnce(1.second, self, OperationTimeout(id, sender()))
       val globalAckTimeoutScheduler = context.system.scheduler.scheduleOnce(1.second, self, OperationTimeout(id, sender()))
 
-      log.info(s"Leader Replica - Secondaries: ${secondaries.mkString(",")}, size ${secondaries.size}, isEmpty: ${secondaries.isEmpty}")
+      log.info(s"Primary - Insert message, info : Secondaries: ${secondaries.mkString(",")}, size ${secondaries.size}, isEmpty: ${secondaries.isEmpty}")
 
       val persistedPrimaryData = Replica.PersistedPrimaryData(
+        key,
         Some(value),
         sender(),
         scheduler,
@@ -114,13 +118,13 @@ class Replica(val arbiter: ActorRef, persistenceProps: Props) extends Actor with
     }
 
     case OperationTimeout(id, client) => {
-      log.error(s"Replica OperationTImeout! The operation failed, returning OperationFailed($id)")
+      log.error(s"Primary  OperationTImeout! The operation failed, returning OperationFailed($id)")
       client ! OperationFailed(id)
       pendingPersistance = pendingPersistance - id
     }
 
     case Remove(key, id) => {
-      log.info("Leader Replica - Sending Replicate Remove message to all replicators")
+      log.info("Primary - Sending Replicate Remove message to all replicators")
       kv = kv - (key)
       secondaries.values foreach (_ ! Replicate(key, None, id))
 
@@ -129,7 +133,8 @@ class Replica(val arbiter: ActorRef, persistenceProps: Props) extends Actor with
       val globalAckTimeoutScheduler = context.system.scheduler.scheduleOnce(1.second, self, OperationTimeout(id, sender()))
 
       pendingPersistance = pendingPersistance.updated(id,
-        Replica.PersistedPrimaryData(None,
+        Replica.PersistedPrimaryData(key,
+          None,
           sender(),
           scheduler,
           timeoutScheduler,
@@ -140,6 +145,8 @@ class Replica(val arbiter: ActorRef, persistenceProps: Props) extends Actor with
 
     case Persisted(key, id) => {
       log.info(s"Primary - Persisted($key, $id)")
+      log.info(s"Primary Persisted - pendingPersistance: ${pendingPersistance.mkString(",")}!")
+
       pendingPersistance get id match {
         case Some(persistedData: PersistedPrimaryData) => {
           //pendingPersistance = pendingPersistance - id
@@ -165,10 +172,11 @@ class Replica(val arbiter: ActorRef, persistenceProps: Props) extends Actor with
       val newReplicas = currentReplicas -- secondaries.keys.toSet[ActorRef] - self
       val droppedReplicas = secondaries.keys.toSet[ActorRef] -- currentReplicas - self
 
-      log.info(s"Replicas - Existing replicas: ${secondaries.keys.mkString(",")}")
-      log.info(s"Replicas - Current replicas: ${currentReplicas.mkString(",")}")
-      log.info(s"Replicas - NewReplicas: ${newReplicas.mkString(",")}, size: ${newReplicas.size}, isEmpty: ${newReplicas.isEmpty}")
-      log.info(s"Replicas - Dropped replicas: ${droppedReplicas.mkString(",")}, size: ${droppedReplicas.size}, isEmpty: ${droppedReplicas.isEmpty}")
+      log.info(s"Primary - Existing replicas: ${secondaries.keys.mkString(",")}")
+      log.info(s"Primary - Current replicas: ${currentReplicas.mkString(",")}")
+      log.info(s"Primary - NewReplicas: ${newReplicas.mkString(",")}, size: ${newReplicas.size}, isEmpty: ${newReplicas.isEmpty}")
+      log.info(s"Primary - Dropped replicas: ${droppedReplicas.mkString(",")}, size: ${droppedReplicas.size}, isEmpty: ${droppedReplicas.isEmpty}")
+      log.info(s"Primary Replicas - pendingPersistance: ${pendingPersistance.mkString(",")}!")
 
       val newSecondaries = newReplicas.map { replica =>
         (replica, context.actorOf(Replicator.props(replica)))
@@ -188,13 +196,20 @@ class Replica(val arbiter: ActorRef, persistenceProps: Props) extends Actor with
              replicator ! Replicate(key, Some(value), 0L)
            }
          }
+          pendingPersistance foreach  {
+            case (id, persistedData: PersistedPrimaryData) =>
+              log.info(s"Primary Replicas - persisting pending persistance id: $id")
+
+              replicator ! Replicate(persistedData.key, persistedData.valueOption, id)
+          }
       }
 
       droppedReplicators.foreach { context.stop(_) }
     }
 
     case Replicator.Replicated(key, id) => {
-      log.info("Replica Replicated received!")
+      log.info(s"Primary Replicated received! - id: $id")
+      log.info(s"Primary Replicated - pendingPersistance: ${pendingPersistance.mkString(",")}!")
 
       pendingPersistance get id match {
         case Some(persistedData: PersistedPrimaryData) => {
@@ -261,12 +276,12 @@ class Replica(val arbiter: ActorRef, persistenceProps: Props) extends Actor with
 
     case Persisted(key, seq) => {
       log.info(s"Replica - Persisted($key, $seq)")
-      expectedSeq += 1L
       pendingPersistance get seq match {
         case Some(persist: PersistedSecondaryData) => {
           pendingPersistance = pendingPersistance - seq
           persist.sender ! SnapshotAck(key, seq)
           persist.scheduler.cancel()
+          expectedSeq += 1L
         }
         case None =>
           log.info(s"Replica - PendingPersistance for ${seq} not found")

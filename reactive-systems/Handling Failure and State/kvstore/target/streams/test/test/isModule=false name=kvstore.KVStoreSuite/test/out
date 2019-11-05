@@ -15,3 +15,4 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- Step5-case4: Primary generates failure after 1 second if global acknowledgement fails[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- Step5-case5: Primary acknowledges only after persistence and global acknowledgement[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- Step6-case1: Primary must start replication to new replicas[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Integration-case2[0m[0m

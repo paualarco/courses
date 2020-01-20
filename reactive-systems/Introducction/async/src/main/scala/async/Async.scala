@@ -117,9 +117,10 @@ object Async {
     *         and returns its result in a `Future` value
     */
   def futurize(callbackBasedApi: CallbackBasedApi): FutureBasedApi = new FutureBasedApi {
-
-    override def computeIntAsync() = callbackBasedApi.computeIntAsync()
+    override def computeIntAsync(): Future[Int] = {
+      val p = Promise[Int]
+      callbackBasedApi.computeIntAsync(continuation => p.tryComplete(continuation))
+      p.future
+    }
   }
-
-
 }

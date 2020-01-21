@@ -99,18 +99,9 @@ object BinaryTreeSet {
       log.info("GarbageCollecting - ¡CopyFinished! So starting Migration...")
       root = newRoot
       requester ! CopyFinished
-      if(pendingQueue.isEmpty){
-        log.info("GarbageCollecting1 - Empty queue, so going back to normal state...")
-        context.become(normal)
-      }
-      else {
-        log.info("GarbageCollecting1 - Not empty queue, so dequeueing...")
-        val (nextOp, nextQueue) = pendingQueue.dequeue
-        log.debug(s"Gargage Collector to Dequeueing -> Head: ${nextOp}")
-        root ! changeToSelfRequester(nextOp)
-        pendingQueue = nextQueue
-        context.become(dequeueing())
-      }
+      pendingQueue.foreach( root ! _ )
+      pendingQueue = Queue.empty[Operation]
+      context.become(normal)
     }
     case op: Operation => {
       log.info(s"Garbage collecting - Operation while Garbage Collecting, queue size ${pendingQueue.size}")
@@ -164,9 +155,9 @@ object BinaryTreeSet {
 
     case GC => {
       log.info("Dequeueing - GC!")
-     /* newRoot = context.actorOf(props(0, true))
-      root ! CopyTo(newRoot)
-      context.become(garbageCollecting(sender(), newRoot))*/
+      /* newRoot = context.actorOf(props(0, true))
+       root ! CopyTo(newRoot)
+       context.become(garbageCollecting(sender(), newRoot))*/
     }
   }
 
@@ -245,15 +236,13 @@ class BinaryTreeNode(val elem: Int, initiallyRemoved: Boolean) extends Actor wit
       log.info(s"Node $elem Receive - Remove (id:$id, elemToRemove:$elemToRemove)")
       if (elemToRemove == elem) {
         //log.info(s"Removed element: $elem ${if (removed) ", which was already removed" else ""}")
-        requester ! OperationFinished(id)
         removed = true
+        requester ! OperationFinished(id)
       }
-      else if (elemToRemove < elem) {
-        if (subtrees contains Left) {
-          subtrees(Left) ! Remove(requester, id, elemToRemove)
-        }
+      else if ((elemToRemove < elem) && (subtrees contains Left)) {
+        subtrees(Left) ! Remove(requester, id, elemToRemove)
       }
-      else if (subtrees contains Right) {
+      else if ((elemToRemove > elem )&& (subtrees contains Right)) {
         subtrees(Right) ! Remove(requester, id, elemToRemove)
       }
       else {
@@ -265,8 +254,8 @@ class BinaryTreeNode(val elem: Int, initiallyRemoved: Boolean) extends Actor wit
       log.info(s"Node $elem Receive -CopyTo($newNode)")
       var expected = subtrees.values.toSet
       if (!removed) {
-      newNode ! Insert(self, elem, elem)
-      expected = expected.+(self)
+        newNode ! Insert(self, elem, elem)
+        expected = expected.+(self)
       }
       subtrees.values.foreach( _ ! CopyTo(newNode))
       context.become(copying(expected, newNode))
@@ -283,12 +272,11 @@ class BinaryTreeNode(val elem: Int, initiallyRemoved: Boolean) extends Actor wit
       log.info(s"Node $elem Copying - CopyFinished at node with expected: ${expected.size} nodesCopied: ${nodesCopied.size}")
       nodesCopied += sender()
       if (expected == nodesCopied) context.parent ! CopyFinished
-      }
-  /*Actors with elements 4 and 6 finish, and sends CopyFinished to the parent, 5,
-  in that case they arrive at the same time, in which the expected value is the same 2 -1 =1
-  in both cases it won't empty the list of actors, and therefore the process would not endl
-   */
-
+    }
+    /*Actors with elements 4 and 6 finish, and sends CopyFinished to the parent, 5,
+    in that case they arrive at the same time, in which the expected value is the same 2 -1 =1
+    in both cases it won't empty the list of actors, and therefore the process would not endl
+     */
 
     case OperationFinished(_) => {
       nodesCopied += self
